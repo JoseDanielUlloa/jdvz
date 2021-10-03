@@ -1,4 +1,11 @@
 <?php
+
+// Add dynamic title tag support
+function jdvz_theme_support() {
+    add_theme_support('title-tag');
+}
+add_action('after_setup_theme', 'jdvz_theme_support');
+
 // Enqueue styles
 function jdvz_register_styles() {
     $version = wp_get_theme()->get( 'Version' );
