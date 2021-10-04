@@ -26,4 +26,15 @@ function jdvz_register_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'jdvz_register_scripts');
 
+// Add menus
+function jdvz_menus() {
+    $locations = array(
+        'header' => "Header Menu Items",
+        'footer' => "Footer Menu Items",
+        'social' => "Social Menu Items"
+    );
+    register_nav_menus($locations);
+}
+add_action('init', 'jdvz_menus');
+
 ?>
