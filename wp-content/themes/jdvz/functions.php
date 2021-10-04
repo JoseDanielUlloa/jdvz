@@ -10,7 +10,7 @@ add_action('after_setup_theme', 'jdvz_theme_support');
 function jdvz_register_styles() {
     $version = wp_get_theme()->get( 'Version' );
     wp_enqueue_style('jdvz-stlye', get_template_directory_uri() . "/style.css", array('jdvz-bootstrap'), $version, 'all');
-    wp_enqueue_style('jdvz-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.cs", array(), '5.1.1', 'all');
+    wp_enqueue_style('jdvz-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css", array(), '5.1.1', 'all');
     wp_enqueue_style('jdvz-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css", array(), '6.0.0', 'all');
 }
 add_action( 'wp_enqueue_scripts', 'jdvz_register_styles');
