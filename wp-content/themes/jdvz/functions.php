@@ -37,4 +37,9 @@ function jdvz_menus() {
 }
 add_action('init', 'jdvz_menus');
 
+// Add classes to links from menus
+function add_link_class($ulclass) {
+return preg_replace('/<a rel="nav-link"/', '<a class="nav-link"' , $ulclass, -1); }
+    add_filter('wp_nav_menu','add_link_class');
+
 ?>
