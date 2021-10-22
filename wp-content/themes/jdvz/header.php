@@ -25,7 +25,7 @@
                         $logo = wp_get_attachment_image_src($custom_logo_id);
                     }
                 ?>
-                <img class="navbar-brand" src="/wp-content/uploads/2021/10/logo.png" alt="Logo with the initials JDVz in yellow color and black background">
+                <img class="navbar-brand" src="<?php echo $logo[0] ?>" alt="Logo with the initials JDVz in yellow color and black background">
         
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
