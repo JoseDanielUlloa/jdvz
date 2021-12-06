@@ -9,6 +9,7 @@ class TRP_Url_Converter {
 
     protected $absolute_home;
     protected $settings;
+    protected $admin_url;
 
     /**
      * TRP_Url_Converter constructor.
@@ -17,6 +18,8 @@ class TRP_Url_Converter {
      */
     public function __construct( $settings ){
         $this->settings = $settings;
+        //$admin_url is declared here because it was causing a conflict with Ultimate Dashboard since there was an action hooked on site_url
+        $this->admin_url = strtolower( admin_url() );
     }
 
     /**
@@ -54,11 +57,11 @@ class TRP_Url_Converter {
         $abs_home = $this->get_abs_home();
 
         if ( trp_force_slash_at_end_of_link( $this->settings ) ) {
-            $new_url = trailingslashit( trailingslashit($abs_home) . $url_slug );
+            $new_url = trailingslashit( trailingslashit( $abs_home ) . $url_slug );
+        } else {
+            $new_url = trailingslashit( $abs_home ) . $url_slug;
         }
-        else {
-            $new_url = trailingslashit($abs_home) . $url_slug;
-        }
+
 
         if ( ! empty( $path ) ){
             $new_url = trailingslashit($new_url) . ltrim( $path, '/' );
@@ -74,7 +77,6 @@ class TRP_Url_Converter {
      */
     public function is_admin_request() {
         $current_url = $this->cur_page_url();
-        $admin_url = strtolower( admin_url() );
 
         // we can't use wp_get_referer() It looks like it creates an infinite loop because it calls home_url() and we're filtering that
         // array('http','https') is added because of a compatibility issue with Scriptless Social Sharing that created an infinite loop
@@ -88,7 +90,7 @@ class TRP_Url_Converter {
         }
 
         //consider an admin request a call to the rest api that came from the admin area
-        if( false !== strpos( $current_url, '/wp-json/' ) && 0 === strpos( $referrer, $admin_url ) ){
+        if( false !== strpos( $current_url, '/wp-json/' ) && 0 === strpos( $referrer, $this->admin_url ) ){
             return true;
         }
 
@@ -96,11 +98,11 @@ class TRP_Url_Converter {
          * Check if this is a admin request. If true, it
          * could also be a AJAX request from the frontend.
          */
-        if ( 0 === strpos( $current_url, $admin_url ) ) {
+        if ( 0 === strpos( $current_url, $this->admin_url ) ) {
             /**
              * Check if the user comes from a admin page.
              */
-            if ( 0 === strpos( $referrer, $admin_url ) ) {
+            if ( 0 === strpos( $referrer, $this->admin_url ) ) {
                 return true;
             } else {
                 if ( function_exists( 'wp_doing_ajax' ) ) {
@@ -476,13 +478,28 @@ class TRP_Url_Converter {
             }else {
                 $path = trailingslashit( ABSPATH ) . str_replace( untrailingslashit( $this->get_abs_home() ), '', $url );
 
-                $return = is_file( $path );
+                if(apply_filters('trp_is_file', true, $path)) {
+                    $return = is_file( $path );
+                }else{
+                    $return = true;
+                }
             }
         }
 
         return apply_filters( 'trp_url_is_file', $return, $url, $this->get_abs_home() );
     }
 
+    public function does_url_contains_array($return, $path){
+        $elements_to_avoid = apply_filters( 'trp_elements_to_avoid_when_is_file_is_called', array("index.php", "/../"));
+        foreach ($elements_to_avoid as $element){
+            if( strpos($path, $element) !== false ){
+                $return = false;
+                return $return;
+            }
+        }
+
+        return $return;
+    }
 
 	/**
 	 * Check for a spacial type of URL. Currently includes mailto, tel, callto URL types.

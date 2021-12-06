@@ -3,9 +3,9 @@ Contributors: cozmoslabs, razvan.mo, madalin.ungureanu, sareiodata, cristophor
 Donate link: https://www.translatepress.com/
 Tags: translate, translation, multilingual, automatic translation, bilingual, front-end translation, google translate, language
 Requires at least: 3.1.0
-Tested up to: 5.8.1
+Tested up to: 5.8.2
 Requires PHP: 5.6.20
-Stable tag: 2.1.3
+Stable tag: 2.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -140,6 +140,29 @@ For more information please check out our [documentation](https://translatepress
 
 
 == Changelog ==
+= 2.1.7 =
+* Added form in settings to sign up for TranslatePress email course
+* Fixed issue when logging in that redirected to "page not found" when languages are reordered
+* Fixed hyphenation issue on default language when using WP-typography plugin
+* Fixed notices regarding is_file call
+
+= 2.1.6 =
+* Show sanitized translation when editing gettext strings in Translation Editor
+* Fixed showing translation language instead of default language in some cases in Elementor, Divi and WPBakery editors
+* Fixed breadcrumbs issue with All in One SEO plugin on translation language
+* Fixed Beaver Builder Editor loading loop when Automatic User Language Detection is active
+* Fixed issue with excluding path from translation
+
+= 2.1.5 =
+* Show sanitized translation after saving changes in Translation Editor
+* Improved query for getting existing translations
+* Fixed issue with using wildcard in Translate only certain paths feature
+* Fixed php warning on settings page about DeepL
+
+= 2.1.4 =
+* Optimized automatic translation usage by improved recognition of cdata, js scripts and encoded html
+* Fixed conflict with Ultimate Dashboard
+
 = 2.1.3 =
 * Added Opposite Language menu item when using 2 languages
 * Added support for opposite language in floating language switcher
