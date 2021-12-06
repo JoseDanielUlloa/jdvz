@@ -110,16 +110,7 @@ if ( ! function_exists( 'wp_install' ) ) :
 
 		wp_install_defaults( $user_id );
 
-		
-			/**
-			  * THIS SECTION SHOULD NOT BE HERE. If you see this, installation likely failed.
-			  * Injected by Local by Flywheel to prevent DNS caused by wp_install_maybe_enable_pretty_permalinks();
-			  **/
-			global $wp_rewrite;
-			$wp_rewrite->set_permalink_structure( '/%postname%/' );
-			$wp_rewrite->flush_rules( true );
-			/* End Local by Flywheel Install Injection */
-			
+		wp_install_maybe_enable_pretty_permalinks();
 
 		flush_rewrite_rules();
 
