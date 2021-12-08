@@ -81,7 +81,7 @@ a:visited {
 
 /***** Header *****/
 
-header {
+.main-header {
   background: var(--color-primary);
   padding: 20px 5%;
   display: flex;

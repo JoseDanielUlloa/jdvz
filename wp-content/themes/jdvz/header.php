@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="a11y-nav">
+    <header class="a11y-nav main-header">
         <!-- Skip links -->
         <a href="#main-content" class="skip-link">Skip to content</a>
 
