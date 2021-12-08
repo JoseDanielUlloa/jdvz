@@ -90,7 +90,7 @@
                         </ul>
                     </li>
                     <li class="show-on-desktop">
-                        <a href="#">
+                        <a href="/contact/">
                             <i aria-hidden="true" class="far fa-envelope" title="Contact form"></i>
                             <span class="sr-only">Contact form</span>
                         </a>
