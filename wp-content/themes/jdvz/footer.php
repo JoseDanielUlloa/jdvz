@@ -1,18 +1,15 @@
-    <footer class="footer text-center py-2 theme-bg-dark">
-
+    <footer>
         <?php
             wp_nav_menu(
                 array(
-                    'menu' => 'footer',
+                    'menu' => 'social',
                     'container' => '',
-                    'theme_location' => 'footer',
-                    'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+                    'theme_location' => 'social',
+                    'items_wrap' => '<ul aria-labelledby="social-nav-heading" class="list-reset">%3$s</ul>'
                  )
             );
         ?>
-
     </footer>
-
     </div>
 
     <?php
@@ -20,5 +17,4 @@
     ?>
 
 </body>
-
 </html>
