@@ -37,9 +37,9 @@
                 <?php
                     wp_nav_menu(
                         array(
-                            'menu' => 'header',
+                            'menu' => 'left',
                             'container' => '',
-                            'theme_location' => 'header',
+                            'theme_location' => 'left',
                             'items_wrap' => '<ul aria-labelledby="left-nav-heading" class="list-reset">%3$s</ul>'
                         )
                     );
