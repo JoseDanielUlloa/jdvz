@@ -67,7 +67,7 @@
                 <h2 id="right-nav-heading" class="sr-only">Right side site navigation</h2>
                  <ul aria-labelledby="right-nav-heading" class="list-reset">
                     <li>
-                        <a href="#">
+                        <a href="#" class="readabler-trigger">
                             <i aria-hidden="true" class="fas fa-universal-access" title="Accessibility tools"></i>
                             <span class="sr-only">Accessibility tools</span>
                         </a>

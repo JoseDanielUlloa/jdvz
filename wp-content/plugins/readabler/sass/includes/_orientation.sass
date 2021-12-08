@@ -1,0 +1,38 @@
+@import "vars"
+
+/** Easy Orientation */
+#mdp-readabler-easy-orientation-box
+  padding: 0 $padding - $controlSize/4 0 $padding
+  margin: 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+/** Useful Links. */
+.mdp-readabler-useful-links-box
+  .mdp-readabler-action-box-content
+    flex-direction: column
+    padding: $padding/2
+
+  .mdp-readabler-select-box
+    width: 100%
+    margin-top: 4px
+
+    select
+      width: 100%
+      max-width: 100%
+      border-radius: 8px
+      padding: 0 15px
+      font-size: 18px
+      height: $controlSize*1.5
+
+#mdp-readabler-action-useful-links
+  width: 100%
+  min-height: 100px
+
+  i
+    display: none
+
+@import "reading-mask"
+
+@import "reading-guide"

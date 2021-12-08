@@ -1,0 +1,64 @@
+@import "vars"
+
+/** Readable Controls. */
+#mdp-readabler-readable-experience-box
+  padding: 0 $padding - $controlSize/4 0 $padding
+  margin: 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.mdp-readabler-action-box
+
+  &:not(.mdp-readabler-shortcode)
+    border-radius: $fontSize/2
+    padding: $fontSize $fontSize*.75
+    transition: .3s
+    min-height: 100px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-top: $fontSize*1.5
+    box-sizing: border-box
+
+  &:hover,
+  &:focus
+    transition: .3s
+
+  &:focus
+    outline: none
+
+  &.mdp-hidden
+    display: none
+
+  .mdp-readabler-action-box-content
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    .mdp-readabler-icon
+      width: $controlSize
+      height: $controlSize
+      margin-bottom: $controlSize/4
+
+    .mdp-readabler-title
+      text-align: center
+      font-size: $fontSize
+      line-height: 1.45
+
+#mdp-readabler-action-text-magnifier
+  width: 100%
+
+#mdp-readabler-action-align-left,
+#mdp-readabler-action-align-center,
+#mdp-readabler-action-align-right
+  width: 30%
+
+#mdp-readabler-action-content-scaling
+
+  .mdp-readabler-action-box-content
+    flex-direction: row
+
+    i
+      margin-right: 8px

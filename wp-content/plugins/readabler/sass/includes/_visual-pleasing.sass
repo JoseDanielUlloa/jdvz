@@ -1,0 +1,187 @@
+@import "vars"
+
+#mdp-readabler-visually-pleasing-experience-box
+  padding: 0 $padding - $controlSize/4 0 $padding
+  margin: 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  #mdp-readabler-action-text-colors,
+  #mdp-readabler-action-title-colors,
+  #mdp-readabler-action-background-colors
+    width: 100%
+
+.mdp-readabler-light-contrast
+
+  .mdp-readabler-icon
+    background-color: var(--readabler-color) !important
+
+  .mdp-readabler-toggle-box
+
+    &.mdp-active
+
+      .mdp-readabler-icon
+        background-color: var(--readabler-bg) !important
+
+      span
+        color: var(--readabler-text) !important
+
+.mdp-readabler-dark-contrast
+
+  .mdp-readabler-profile-title
+    background: #181818
+    color: #a2e6cc
+    padding: 0 4px
+    border-radius: 4px
+    display: inline
+
+  .mdp-readabler-profile-short
+    background: #181818
+    color: #fff
+    padding: 0 4px
+    border-radius: 4px
+
+  #mdp-readabler-online-dictionary-search
+    background-image: url(../images/wikipedia_dark.svg) !important
+
+  ::placeholder
+    color: #d1d1d1
+
+  #mdp-readabler-online-dictionary-box
+
+    label
+      background-image: url(../images/info-dark.svg) !important
+
+.mdp-readabler-dark-contrast,
+.mdp-readabler-light-contrast
+
+  p
+    border-radius: 4px
+
+  .mdp-readabler-action-box
+
+    .mdp-readabler-action-box-content
+
+      .mdp-readabler-title
+        padding: 0 4px
+        border-radius: 4px
+
+  label.mdp-switch
+    border-radius: 1rem
+
+  #mdp-readabler-popup-footer
+
+    button
+
+      span
+        padding: 0 4px
+        border-radius: 4px
+
+    .mdp-readabler-statement
+      padding: 4px 8px !important
+      border-radius: 4px
+
+  .mdp-readabler-subheader
+
+    h4
+      padding: 0 8px !important
+      border-radius: 4px
+      display: inline-block
+
+  #mdp-readabler-online-dictionary-box
+
+    label
+      display: inline-block
+      padding-right: 4px
+      border-radius: 4px
+
+// Dark contrast
+
+body.mdp-readabler-dark-contrast h1,
+body.mdp-readabler-dark-contrast h1 span,
+body.mdp-readabler-dark-contrast h2,
+body.mdp-readabler-dark-contrast h2 span,
+body.mdp-readabler-dark-contrast h3,
+body.mdp-readabler-dark-contrast h3 span,
+body.mdp-readabler-dark-contrast h4,
+body.mdp-readabler-dark-contrast h4 span,
+body.mdp-readabler-dark-contrast h5,
+body.mdp-readabler-dark-contrast h5 span,
+body.mdp-readabler-dark-contrast h6,
+body.mdp-readabler-dark-contrast h6 span
+  background-color: #181818 !important
+  color: #a2e6cc !important
+
+body.mdp-readabler-dark-contrast,
+body.mdp-readabler-dark-contrast p,
+body.mdp-readabler-dark-contrast li,
+body.mdp-readabler-dark-contrast label,
+body.mdp-readabler-dark-contrast input,
+body.mdp-readabler-dark-contrast select,
+body.mdp-readabler-dark-contrast textarea,
+body.mdp-readabler-dark-contrast legend,
+body.mdp-readabler-dark-contrast code,
+body.mdp-readabler-dark-contrast pre,
+body.mdp-readabler-dark-contrast dd,
+body.mdp-readabler-dark-contrast dt,
+body.mdp-readabler-dark-contrast span,
+body.mdp-readabler-dark-contrast blockquote
+  color: #fff !important
+  background-color: #181818 !important
+
+body.mdp-readabler-dark-contrast a,
+body.mdp-readabler-dark-contrast h1 a,
+body.mdp-readabler-dark-contrast h2 a,
+body.mdp-readabler-dark-contrast h3 a,
+body.mdp-readabler-dark-contrast h4 a,
+body.mdp-readabler-dark-contrast h5 a,
+body.mdp-readabler-dark-contrast h6 a
+  background-color: #181818 !important
+  color: #f7c79b !important
+
+// Light Contrast
+body.mdp-readabler-light-contrast h1,
+body.mdp-readabler-light-contrast h1 span,
+body.mdp-readabler-light-contrast h2,
+body.mdp-readabler-light-contrast h2 span,
+body.mdp-readabler-light-contrast h3,
+body.mdp-readabler-light-contrast h3 span,
+body.mdp-readabler-light-contrast h4,
+body.mdp-readabler-light-contrast h4 span,
+body.mdp-readabler-light-contrast h5,
+body.mdp-readabler-light-contrast h5 span,
+body.mdp-readabler-light-contrast h6,
+body.mdp-readabler-light-contrast h6 span
+  color: #075F39 !important
+  background-color: #fff !important
+
+body.mdp-readabler-light-contrast,
+body.mdp-readabler-light-contrast p,
+body.mdp-readabler-light-contrast li,
+body.mdp-readabler-light-contrast label,
+body.mdp-readabler-light-contrast input,
+body.mdp-readabler-light-contrast select,
+body.mdp-readabler-light-contrast textarea,
+body.mdp-readabler-light-contrast legend,
+body.mdp-readabler-light-contrast code,
+body.mdp-readabler-light-contrast pre,
+body.mdp-readabler-light-contrast dd,
+body.mdp-readabler-light-contrast dt,
+body.mdp-readabler-light-contrast span,
+body.mdp-readabler-light-contrast blockquote
+  color: #27272d !important;
+  background-color: #fff !important
+
+
+body.mdp-readabler-light-contrast a,
+body.mdp-readabler-light-contrast h1 a,
+body.mdp-readabler-light-contrast h2 a,
+body.mdp-readabler-light-contrast h3 a,
+body.mdp-readabler-light-contrast h4 a,
+body.mdp-readabler-light-contrast h5 a,
+body.mdp-readabler-light-contrast h6 a
+  color: #074FBB !important
+  background-color: #fff !important
+
+@import "chromaticity"

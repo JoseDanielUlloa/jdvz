@@ -1,0 +1,107 @@
+/**
+ * Readabler
+ * Web accessibility for Your WordPress site.
+ * Exclusively on https://1.envato.market/readabler
+ *
+ * @encoding        UTF-8
+ * @version         1.2.10
+ * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
+ * @support         help@merkulov.design
+ * @license         Envato License https://1.envato.market/KYbje
+ **/
+
+@import "includes/vars" // SASS variables
+
+@import "includes/popup" // Popup Styles
+
+@import "includes/accessibility-statement" // Accessibility Statement
+
+@import "includes/keyframes" // Keyframes for animations
+
+/** Popup Animation. */
+#mdp-readabler-popup-box
+  @import "includes/modal-animation"
+
+@import "includes/simple-keyboard" // Simple keyboard
+
+@import "includes/float_button" // Trigger button
+
+@import "includes/profiles" // Accessibility Profiles
+
+@import "includes/readable" // Readable Controls
+
+@import "includes/visual-pleasing" // Visual Pleasing
+
+@import "includes/orientation" // Easy Orientation
+
+@import "includes/dictionary" // Online Dictionary
+
+@import "includes/text-to-speech" // Text-to-Speech
+
+@import "readabler-icons" // Icons
+
+@import "readabler-controls" // Controls
+
+@import "includes/themes" // Day and Night Themes
+
+/** Toggle Box control */
+.mdp-readabler-toggle-box
+  cursor: pointer
+  user-select: none
+  width: calc( 50% - 12px )
+
+/** Text Magnifier. */
+// Tooltip
+#mdp-readabler-text-magnifier-tooltip
+  position: fixed
+  padding: 16px
+  border-radius: 4px
+  background: #333333
+  color: #fff
+  font-size: 36px
+  line-height: 1.5
+  z-index: 999999
+  word-break: break-word
+  width: fit-content
+
+/** Virtual keyboard. */
+#mdp-readabler-keyboard-box
+  display: none
+  position: fixed
+  width: 650px
+  bottom: 0
+  left: 0
+  padding: 35px 8px 8px
+  cursor: move
+  box-shadow: 0 0 2px #333
+  border-radius: 4px
+  z-index: 99999
+
+/** Hide keyboard on mobile. */
+@media screen and ( max-width: 980px )
+  #mdp-readabler-keyboard-box
+    display: none !important
+
+
+.mdp-readabler-shortcode
+  z-index: 1
+  width: unset !important
+
+  .mdp-readabler-input-spinner-box
+
+    .mdp-readabler-spinner-box
+      width: unset
+
+    .mdp-readabler-control
+
+      button
+
+        &.mdp-readabler-plus,
+        &.mdp-readabler-minus
+          color: inherit
+
+          &:before
+            content: unset
+            display: none

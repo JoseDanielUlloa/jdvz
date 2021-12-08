@@ -1,0 +1,244 @@
+@import "vars"
+
+/** Popup Styles. */
+#mdp-readabler-popup-box
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif
+  display: none
+
+  &.mdp-is-open
+    display: block
+
+  &.mdp-readabler-modal-absolute
+
+    #mdp-readabler-popup
+      position: absolute
+
+  &.mdp-readabler-modal-fixed
+
+    #mdp-readabler-popup
+      position: fixed
+
+  &.mdp-readabler-modal-shadow
+
+    #mdp-readabler-popup
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12)
+
+// Overlay
+#mdp-readabler-overlay
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 99998
+  background-color: var(--readabler-overlay)
+
+// Popup
+#mdp-readabler-popup
+  top: 5vh
+  z-index: 99999
+  display: block
+  width: 25vw
+  max-height: 95vh
+  min-width: 460px
+  box-sizing: border-box
+  overflow: hidden
+  border-radius: var(--readabler-border-radius)
+  animation-duration: var(--readabler-animate)
+  animation-iteration-count: 1
+  animation-direction: normal
+  animation-fill-mode: both
+
+  &[data-start=right]
+    right: 0
+
+  &[data-start=left]
+    left: 0
+
+  &[data-start=center]
+    right: 0
+    left: 0
+    margin: 0 auto
+
+  // Subheader
+  .mdp-readabler-subheader
+    padding: 4px 0 0 0
+    margin: $padding $padding*.75 0 $padding
+
+    &:nth-child(1)
+      margin-top: 0
+
+    h4
+      font-size: 24px
+      margin: $padding/2 0 0
+      padding: 0
+
+  // Content
+  #mdp-readabler-popup-main
+    height: 60vh
+    overflow: auto
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+    &>div
+
+      &:last-child
+        padding-bottom: 0
+
+    // Scrollbar
+    &::-webkit-scrollbar-track
+      border-radius: 6px
+
+    &::-webkit-scrollbar
+      width: $controlSize/2
+
+    &::-webkit-scrollbar-thumb
+      border-radius: $controlSize/4
+
+  // Header
+  #mdp-readabler-popup-header
+    cursor: move
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 80px
+    width: 100%
+    overflow: hidden
+    box-sizing: border-box
+    padding-top: $padding/2
+
+    // Title
+    h3
+      padding: 0
+      margin: 0 $padding
+      font-size: 24px
+      font-weight: bold
+      font-family: sans-serif !important
+
+  // Close
+  #mdp-readabler-popup-close
+    background: transparent
+    border: 0
+    padding: 10px
+    margin-right: $padding
+
+    &:before
+      content: "\2715"
+      width: 16px
+      height: 16px
+      display: flex
+      justify-content: center
+      align-items: center
+
+  #mdp-readabler-focus-holder
+    width: 1px
+    opacity: 0
+
+  // Footer
+  #mdp-readabler-popup-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin: 0
+    padding: $padding
+    box-sizing: border-box
+
+    button
+      font-size: $fontSize
+      border-radius: $fontSize
+      min-height: $controlSize
+      margin: 0 $controlSize/4
+      padding: $controlSize/2
+      flex-grow: 1
+      transition: .2s
+      font-weight: bold
+      text-transform: none
+      letter-spacing: normal
+
+      &:focus
+        outline: none
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+    .mdp-readabler-statement
+      width: 100%
+      flex-grow: 2
+      font-size: 14px
+      line-height: 1.25
+      padding: 0
+      margin: .75rem 0 -.25rem 0
+      text-align: center
+
+      a
+        text-decoration: underline
+        cursor: pointer
+
+#mdp-readabler-popup-box.mdp-readabler-non-draggable
+
+    #mdp-readabler-popup-header
+      cursor: default
+
+@media screen and (max-width: 480px)
+
+  #mdp-readabler-popup-box
+
+    &.mdp-readabler-modal-shadow
+
+      #mdp-readabler-popup
+        box-shadow: 0 0 2.2px rgba(0, 0, 0, 0.034),0 0 5.3px rgba(0, 0, 0, 0.048),0 0 10px rgba(0, 0, 0, 0.06)
+
+  #mdp-readabler-popup
+    width: 100%
+    max-width: 100%
+    min-width: 100%
+    max-height: 80vh
+    left: 0 !important
+    bottom: 0
+    top: unset !important
+
+    #mdp-readabler-popup-header
+
+      h3
+        font-size: 20px
+
+    .mdp-readabler-subheader
+
+      h4
+        font-size: 20px
+
+    .mdp-readabler-profile-title
+      font-size: 18px !important
+
+    .mdp-readabler-profile-description
+      display: none
+
+    #mdp-readabler-popup-main
+      height: 40vh
+
+    .mdp-readabler-action-box
+      width: 100%
+
+    #mdp-readabler-popup-close
+
+      &:focus
+        outline: none !important
+
+    #mdp-readabler-popup-footer
+      flex-direction: column
+
+      button
+        width: 100%
+        margin: 0
+        padding: 8px
+
+        &:nth-child(2)
+          margin-top: $padding/2

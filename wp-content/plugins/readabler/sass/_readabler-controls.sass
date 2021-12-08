@@ -1,0 +1,144 @@
+@import "includes/vars"
+
+/** Range Box control */
+.mdp-readabler-input-spinner-box
+  margin-top: $controlSize/8
+
+  .mdp-readabler-control
+    position: relative
+    width: 90%
+    max-width: 200px
+    margin: auto
+    border-radius: $controlSize
+    height: $controlSize
+
+    .mdp-readabler-plus,
+    .mdp-readabler-minus
+      position: absolute
+      display: block
+      padding: 0
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      border-radius: 50%
+      background-color: unset !important
+      cursor: pointer
+      z-index: 2
+      transition: all .15s ease
+      user-select: none
+      border: none
+
+      &:before
+        content: ''
+        display: block
+        width: 32px
+        height: 32px
+        mask-position: center
+        mask-repeat: no-repeat
+        mask-size: contain
+        border-radius: 50%
+
+      &:focus
+        outline: none
+
+    .mdp-readabler-plus
+      right: 2px
+      left: auto
+
+      &:before
+        mask-image: url("../images/toggles/plus.svg")
+
+    .mdp-readabler-minus
+      left: 2px
+      right: auto
+
+      &:before
+        mask-image: url("../images/toggles/minus.svg")
+
+    .mdp-readabler-value
+      text-align: center
+      font-size: $fontSize
+      font-weight: bold
+      padding: 0 $controlSize
+      line-height: $controlSize
+
+/** Toggle Box control */
+.mdp-readabler-toggle-box
+  cursor: pointer
+  user-select: none
+  width: calc( 50% - 12px )
+
+  .mdp-readabler-icon
+    mask-position: center
+    mask-repeat: no-repeat
+    mask-size: contain
+
+  &.mdp-active
+    color: #fff
+
+    span
+      color: white !important
+
+    span.mdp-readabler-icon
+      background-color: white
+
+/** Spinner box */
+.mdp-readabler-spinner-box
+
+  &:not(.mdp-readabler-shortcode)
+    width: 100%
+
+  i
+    display: none
+
+/** Palette control. */
+.mdp-readabler-palette-box
+  padding: $padding/2
+
+  .mdp-readabler-action-box-content
+    flex-direction: column
+
+  .mdp-readabler-color-box
+    user-select: none
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    margin-top: $padding/4
+
+    .mdp-readabler-color
+      display: flex
+      width: $controlSize
+      height: $controlSize
+      border-radius: 50%
+      cursor: pointer
+      position: relative
+      margin: $controlSize/7.5
+      transition: .15s
+
+      &:hover
+        border: none
+
+      &:focus
+        outline: none
+        border: none
+
+      &.mdp-active
+        border: none
+
+        &::before
+          content: ''
+          display: block
+          width: $controlSize/2
+          height: $controlSize/2
+          border-radius: 50%
+          top: 50%
+          left: 50%
+          transform: translate(50%, 50%)
+
+        &:hover
+
+          &::before
+            width: $controlSize/2
+            height: $controlSize/2

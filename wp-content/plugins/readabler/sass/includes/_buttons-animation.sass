@@ -1,0 +1,106 @@
+
+/** Entrance animations. */
+&.mdp-entrance-bounce
+    animation-fill-mode: both
+    animation-name: readabler-bounce
+    animation-duration: .6s
+    animation-delay: var(--readabler-btn-delay)
+
+&.mdp-entrance-fade
+    animation-fill-mode: both
+    animation-name: readabler-fade
+    animation-duration: .6s
+    animation-delay: var(--readabler-btn-delay)
+
+&.mdp-entrance-flip-x
+    animation-fill-mode: both
+    animation-name: readabler-flip-x
+    animation-duration: .8s
+    animation-delay: var(--readabler-btn-delay)
+    backface-visibility: visible !important
+
+&.mdp-entrance-flip-y
+    animation-fill-mode: both
+    animation-name: readabler-flip-y
+    animation-duration: .8s
+    animation-delay: var(--readabler-btn-delay)
+    backface-visibility: visible !important
+
+&.mdp-entrance-scale
+    animation-fill-mode: both
+    animation-name: readabler-scale
+    animation-duration: .4s
+    animation-delay: var(--readabler-btn-delay)
+
+&.mdp-entrance-wobble
+    animation-fill-mode: both
+    animation-name: readabler-wobble
+    animation-duration: .5s
+    animation-delay: var(--readabler-btn-delay)
+    backface-visibility: visible !important
+
+&.mdp-entrance-rotate
+    animation-fill-mode: both
+    animation-name: readabler-rotate
+    animation-duration: .8s
+    animation-delay: var(--readabler-btn-delay)
+
+/** Hover animations. */
+&.mdp-hover-bounce,
+&.mdp-hover-fade,
+&.mdp-hover-flip-x,
+&.mdp-hover-flip-y,
+&.mdp-hover-scale,
+&.mdp-hover-rotate,
+&.mdp-hover-wobble
+
+    button:hover span
+        animation-fill-mode: both
+
+        &:nth-child(2)
+            animation-delay: .1s
+
+&.mdp-hover-bounce
+
+    button:hover span
+        animation-name: readabler-bounce
+        animation-duration: .6s
+
+&.mdp-hover-fade
+
+    button:hover span
+        animation-name: readabler-fade
+        animation-duration: .6s
+
+&.mdp-hover-flip-x
+
+    button:hover span
+        animation-name: readabler-flip-x
+        animation-duration: .8s
+        backface-visibility: visible !important
+
+&.mdp-hover-flip-y
+
+    button:hover span
+        animation-name: readabler-flip-y
+        animation-duration: .8s
+        backface-visibility: visible !important
+
+&.mdp-hover-scale
+
+    button:hover span
+        animation-name: readabler-scale
+        animation-duration: .4s
+
+&.mdp-hover-rotate
+
+    button:hover span
+        animation-name: readabler-rotate
+        animation-duration: .5s
+
+&.mdp-hover-wobble
+
+    button:hover span
+        animation-name: readabler-wobble
+        animation-duration: .5s
+        backface-visibility: visible !important

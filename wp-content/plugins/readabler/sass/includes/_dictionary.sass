@@ -1,0 +1,81 @@
+@import "vars"
+
+/** Online Dictionary. */
+#mdp-readabler-online-dictionary-box
+  padding: 0 $padding - $controlSize/4 0 $padding
+  position: relative
+
+  #mdp-readabler-online-dictionary-form
+    margin-top: $fontSize*1.5
+
+    // Search input
+    #mdp-readabler-online-dictionary-search
+      width: 100%
+      margin: 0
+      padding: $fontSize*1.5 $fontSize $fontSize*1.5 $fontSize*3+4
+      line-height: $fontSize
+      border-radius: 8px
+      background-position: $fontSize+2 center
+      background-repeat: no-repeat
+      background-size: $fontSize*1.5
+      transition: .25s ease-in-out all
+
+      &:focus
+        outline: none
+
+  #mdp-readabler-online-dictionary-search-results-box
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        margin-top: $padding
+
+        h5
+          font-size: 20px
+
+  // Clear results
+  #mdp-readabler-online-dictionary-search-close
+    display: none
+    position: absolute
+    cursor: pointer
+    background: transparent
+    border: none
+    outline: none
+    padding: 0
+    margin: 2px $padding 0 0
+    right: $fontSize*1.5
+    top: $fontSize*1.5
+    width: 24px
+    height: 24px
+    opacity: 0.3
+
+    &:hover
+      opacity: 1
+
+    &:before,
+    &:after
+      position: absolute
+      left: 12px
+      top: 0
+      content: ' '
+      height: 24px
+      width: 2px
+
+    &:before
+      transform: rotate(45deg)
+
+    &:after
+      transform: rotate(-45deg)
+
+  label
+    font-size: $fontSize
+    margin-top: $fontSize
+    padding: 0 0 0 $fontSize+6px
+    background-size: $fontSize $fontSize
+    background-repeat: no-repeat
+    background-position: left $fontSize/4
+    display: flex
+    line-height: $fontSize*1.5

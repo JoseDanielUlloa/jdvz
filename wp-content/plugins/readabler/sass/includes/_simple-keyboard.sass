@@ -1,0 +1,74 @@
+.mdp-readabler-simple-keyboard
+  width: 100%
+  user-select: none
+  box-sizing: border-box
+  overflow: hidden
+  touch-action: manipulation
+
+  .hg-button span
+    pointer-events: none
+
+  button.hg-button
+    border-width: 0
+    outline: 0
+    font-size: inherit
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  padding: 5px
+  border-radius: 5px
+
+  .hg-button
+    display: inline-block
+    flex-grow: 1
+
+  .hg-row
+    display: flex
+
+    &:not(:last-child)
+      margin-bottom: 5px
+
+    .hg-button-container, .hg-button:not(:last-child)
+      margin-right: 5px
+
+    > div:last-child
+      margin-right: 0
+
+    .hg-button-container
+      display: flex
+
+  .hg-button
+    height: 40px
+    border-radius: 5px
+    box-sizing: border-box
+    padding: 5px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+
+  &.hg-layout-numeric .hg-button
+    width: 33.3%
+    height: 60px
+    align-items: center
+    display: flex
+    justify-content: center
+
+  .hg-button
+    &.hg-button-numpadadd, &.hg-button-numpadenter
+      height: 85px
+
+    &.hg-button-numpad0
+      width: 105px
+
+    &.hg-button-com
+      max-width: 85px
+
+    &.hg-standardBtn.hg-button-at
+      max-width: 45px
+
+    &.hg-standardBtn
+      &[data-skbtn=".com"]
+        max-width: 82px
+
+      &[data-skbtn="@"]
+        max-width: 60px

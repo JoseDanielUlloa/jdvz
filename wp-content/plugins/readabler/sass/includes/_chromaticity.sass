@@ -1,0 +1,29 @@
+// Saturation and Contrast
+
+.mdp-readabler-high-saturation
+
+  > *:not(#mdp-readabler-popup-box):not(#boxed-wrapper):not(.avada-footer-scripts),
+  #mdp-readabler-popup,
+  .fusion-wrapper > *
+    filter: saturate(200%) !important
+
+.mdp-readabler-low-saturation
+
+  > *:not(#mdp-readabler-popup-box):not(#boxed-wrapper):not(.avada-footer-scripts),
+  #mdp-readabler-popup,
+  .fusion-wrapper > *
+    filter: saturate(50%) !important
+
+.mdp-readabler-high-contrast
+
+  > *:not(#mdp-readabler-popup-box):not(#boxed-wrapper):not(.avada-footer-scripts),
+  #mdp-readabler-popup,
+  .fusion-wrapper > *
+    filter: contrast(135%) !important
+
+.mdp-readabler-monochrome
+
+  > *:not(#mdp-readabler-popup-box):not(#boxed-wrapper):not(.avada-footer-scripts),
+  #mdp-readabler-popup,
+  .fusion-wrapper > *
+    filter: grayscale(100%) !important

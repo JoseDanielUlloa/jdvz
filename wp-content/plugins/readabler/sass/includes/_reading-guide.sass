@@ -1,0 +1,32 @@
+// Reading Guide
+
+.mdp-readabler-reading-guide-element
+  display: none
+
+.mdp-readabler-reading-guide
+
+  .mdp-readabler-reading-guide-element
+    display: flex
+    justify-content: center
+    position: fixed
+    top: 0
+    left: auto
+    right: auto
+    margin: auto
+    max-width: 90%
+    pointer-events: none
+    z-index: 999999
+    width: var(--readabler-reading-guide-width)
+    height: var(--readabler-reading-guide-height)
+    border-radius: var(--readabler-reading-guide-radius)
+    background-color: var(--readabler-reading-guide-bg)
+    border: var(--readabler-reading-guide-border-width) solid var(--readabler-reading-guide-border-color)
+
+    &:before
+      content: ''
+      width: 0
+      height: 0
+      border-left: var(--readabler-reading-guide-arrow) solid transparent
+      border-right: var(--readabler-reading-guide-arrow) solid transparent
+      border-bottom: var(--readabler-reading-guide-arrow) solid var(--readabler-reading-guide-border-color)
+      margin-top: var(--readabler-reading-guide-arrow-margin)

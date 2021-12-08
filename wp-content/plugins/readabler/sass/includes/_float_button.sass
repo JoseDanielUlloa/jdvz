@@ -1,0 +1,132 @@
+@import "vars"
+
+/* Trigger button */
+.mdp-readabler-trigger-button-box
+  position: fixed
+  z-index: 99998
+  margin: var(--readabler-btn-margin)
+
+  // Position
+  &.top-left
+    top: 0
+    left: 0
+
+  &.top-right
+    top: 0
+    right: 0
+
+  &.left-center
+    top: 50%
+    left: 0
+    transform: translate(0%, -50%)
+
+  &.right-center
+    top: 50%
+    right: 0
+    transform: translate(0%, -50%)
+
+  &.bottom-left
+    bottom: 0
+    left: 0
+
+  &.bottom-center
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 0%)
+
+  &.bottom-right
+    bottom: 0
+    right: 0
+
+  // Hover animations
+  @import "buttons-animation"
+
+  button
+    display: flex
+    align-items: center
+    outline: none
+    padding: var(--readabler-btn-padding)
+    border-radius: var(--readabler-btn-radius)
+    color: var(--readabler-btn-color)
+    background: var(--readabler-btn-bg)
+    font-size: var(--readabler-btn-size)
+    transition: .4s ease-in-out all
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:focus-visible
+
+      color: var(--readabler-btn-color-hover)
+      background: var(--readabler-btn-bg-hover)
+
+      .mdp-readabler-trigger-button-icon
+
+        svg
+          fill: var(--readabler-btn-color-hover)
+
+    &#mdp-readabler-trigger-button
+
+      span:nth-child(2)
+        padding: calc(var(--readabler-btn-padding) / 2)
+
+      &:focus
+        outline: none
+        color: var(--readabler-btn-color-hover)
+        background: var(--readabler-btn-bg-hover)
+        box-shadow: 0 0 0 3px var(--readabler-btn-color-hover)
+
+    .mdp-readabler-trigger-button-icon
+
+      svg
+        fill: var(--readabler-btn-color)
+        width: var(--readabler-btn-size)
+        height: var(--readabler-btn-size)
+
+    &:hover,
+    &:focus
+      text-decoration: none
+
+    .mdp-readabler-button-icon
+      display: flex
+      align-self: center
+
+    // Icon position
+    &.mdp-icon-position-before
+      flex-direction: row
+
+      span:nth-child(2)
+        padding-top: 0 !important
+        padding-right: 0 !important
+        padding-bottom: 0 !important
+
+    &.mdp-icon-position-after
+      flex-direction: row-reverse
+
+      span:nth-child(2)
+        padding-top: 0 !important
+        padding-bottom: 0 !important
+        padding-left: 0 !important
+
+    &.mdp-icon-position-above
+      flex-direction: column
+
+      span:nth-child(2)
+        padding-right: 0 !important
+        padding-bottom: 0 !important
+        padding-left: 0 !important
+
+    &.mdp-icon-position-bellow
+      flex-direction: column-reverse
+
+      span:nth-child(2)
+        padding-top: 0 !important
+        padding-right: 0 !important
+        padding-left: 0 !important
+
+    span
+      display: flex
+      transition: all .15s linear
+
+      path
+        transition: all .15s linear

@@ -1,0 +1,104 @@
+@import "vars"
+
+/** Accessibility Profiles. */
+#mdp-readabler-accessibility-profiles-box
+
+  .mdp-readabler-accessibility-profile-item
+    cursor: pointer
+    padding-left: $padding
+    padding-right: $padding
+
+    &:focus
+      outline: none
+
+    &:nth-child(1)
+      margin-top: $padding/2
+
+    .mdp-readabler-row
+      padding: $padding/3 0
+      display: flex
+      align-items: center
+
+      .mdp-readabler-title-box
+        margin-left: $padding*.75
+
+      .mdp-readabler-profile-title
+        font-size: 19px
+        font-weight: bold
+
+      .mdp-readabler-profile-short
+        font-size: $fontSize
+        line-height: 1.4
+
+    .mdp-readabler-profile-description
+      max-height: 0 // We need this to animate
+      overflow: hidden
+      font-size: 16px
+      line-height: 1.4
+      opacity: 0
+      padding: 0
+      transition: all 0.15s ease-out
+
+    // Switcher
+    .mdp-switch
+      position: relative
+      display: inline-block
+      border-radius: $controlSize/2
+      width: 60px
+      height: 34px
+      font-size: 0
+      transition: .25s ease-out all
+
+      &:hover
+        border-radius: $controlSize/2
+
+      // Hide default HTML checkbox
+      input
+        opacity: 0
+        width: 0
+        height: 0
+
+      // The slider
+      .mdp-slider
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border-radius: 34px
+        transition: .4s
+
+        &:before
+          position: absolute
+          content: ""
+          border-radius: 50%
+          height: 26px
+          width: 26px
+          left: 4px
+          bottom: 4px
+          transition: .4s
+
+      input:checked + .mdp-slider:before
+        transform: translateX(26px)
+
+    // Active profile
+    &.mdp-active
+
+      .mdp-readabler-row
+        padding: $padding 0
+
+      .mdp-readabler-profile-description
+        height: auto
+        margin: 0
+        padding: $padding/2 0 $padding 0
+        opacity: 1
+        transition: all 0.15s ease-out
+        max-height: 600px // We need this to animate
+
+      .mdp-switch
+
+        .mdp-slider
+
+          &:before
+            background-color: white

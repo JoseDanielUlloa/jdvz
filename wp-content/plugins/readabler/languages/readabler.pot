@@ -1,0 +1,3327 @@
+# Copyright (C) 2021 Readabler
+# This file is distributed under the same license as the Readabler package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Readabler\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:173
+msgid " For full functionality of this site it is necessary to enable JavaScript."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:461
+msgid "Open Accessibility Panel"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:501
+msgid "Accessibility"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:502
+msgid "Close Accessibility Panel"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:520, wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:521
+msgid "Reset Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:525
+msgid "Hide Accessibility Panel forever"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:526
+msgid "Hide Forever"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:575, wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:575, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1493, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1513
+msgid "Accessibility Statement"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:640
+msgid "Close Accessibility Statement"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:687
+msgid "Voicer: Before you begin"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:688
+msgid "This plugin uses the Cloud Text-to-Speech API. You need to set up your Google Cloud Platform project and authorization before creating audio from text. Visit"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:690
+msgid "Online Documentation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:690
+msgid "for more details."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:677
+msgid "This plugin uses the Google Cloud Text-to-Speech API Key File. Set up your Google Cloud Platform project before the start."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:719
+msgid "Activate your copy of the Readabler to enable Accessibility Modes and additional features"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:150
+msgid "Design"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:151
+msgid "Design Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:167, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2146, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:374
+msgid "Highlight Titles"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:174, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:260, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:580, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:663
+msgid "Style:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:175, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:261, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:581, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:664
+msgid "Style"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:176
+msgid "Select highlight titles style."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:179, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:265, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:585, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:668, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1066, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1441, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1460, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1519
+msgid "None"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:180, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:266, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:586, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:669
+msgid "Dotted"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:181, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:267, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:587, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:670
+msgid "Dashed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:182, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:268, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:588, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:671
+msgid "Solid"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:183, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:269, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:589, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:672
+msgid "Double"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:184, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:270, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:590, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:673
+msgid "3D Grooved"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:185, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:271, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:591, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:674
+msgid "3D Ridged"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:186, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:272, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:592, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:675
+msgid "3D Inset"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:187, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:273, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:593, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:676
+msgid "3D Outset"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:194, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:280, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:600, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:683
+msgid "Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:195, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:281, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:601, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:684
+msgid "Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:196
+msgid "Select highlight titles color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:207, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:208, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:293, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:294, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:403, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:404, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:613, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:614, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:696, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:697
+msgid "Width:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:212, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:230, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:298, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:316, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:374, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:408, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:426, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:468, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:486, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:504, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:541, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:618, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:636, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:701, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:719, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1050, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1301, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1322, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1339, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1356
+msgid " px"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:225, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:226, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:311, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:312, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:631, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:632, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:714, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:715
+msgid "Offset:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:253, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2155, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:390
+msgid "Highlight Links"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:262
+msgid "Select highlight links style."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:282
+msgid "Select highlight links color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:336, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2164, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:331
+msgid "Text Magnifier"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:343, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:437, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:952, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:998, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1391, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1833
+msgid "Background Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:344, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:438, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:798, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:841, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:953, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:999, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1392, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1834
+msgid "Background Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:345
+msgid "Select background color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:355, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:976, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1022
+msgid "Text Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:356, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:977, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1023, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1368
+msgid "Text Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:357
+msgid "Select text color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:369
+msgid "Font Size:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:370
+msgid "Font size:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:394, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2375, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:659
+msgid "Reading Guide"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:421, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:422, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:536, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:537
+msgid "Height:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:439
+msgid "Select background color for reading guide."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:449
+msgid "Border Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:450
+msgid "Border Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:451
+msgid "Select border color for reading guide."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:463, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:464
+msgid "Border Width:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:481, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:482
+msgid "Border Radius:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:499, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:500
+msgid "Arrow size:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:527, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2402, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:696
+msgid "Reading Mask"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:552, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1120
+msgid "Overlay Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:553, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1121
+msgid "Overlay Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:554
+msgid "Select overlay color for reading mask."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:573, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2411, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:707
+msgid "Highlight Hover"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:582
+msgid "Select highlight hover style."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:602
+msgid "Select highlight hover color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:656, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2420, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:717
+msgid "Highlight Focus"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:665
+msgid "Select highlight focus style."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:685
+msgid "Select highlight focus color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:742, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2366, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:648
+msgid "Virtual Keyboard"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:749
+msgid "Layout:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:750
+msgid "Layout"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:751
+msgid "Select language layout for virtual keyboard."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:754
+msgid "Arabic"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:755
+msgid "Assamese"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:756
+msgid "Belarusian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:757
+msgid "Bengali"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:758
+msgid "Burmese"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:759
+msgid "Chinese"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:760
+msgid "Czech"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:761, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2036
+msgid "English"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:762
+msgid "Farsi"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:763
+msgid "French"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:764
+msgid "Georgian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:765
+msgid "German"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:766
+msgid "Gilaki"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:767
+msgid "Greek"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:768
+msgid "Hebrew"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:769
+msgid "Hindi"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:770
+msgid "Italian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:771
+msgid "Japanese"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:772
+msgid "Kannada"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:773
+msgid "Korean"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:774
+msgid "Nigerian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:775
+msgid "Norwegian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:776
+msgid "Polish"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:777
+msgid "Russian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:778
+msgid "Sindhi"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:779
+msgid "Spanish"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:780
+msgid "Swedish"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:781
+msgid "Thai"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:782
+msgid "Turkish"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:783
+msgid "Ukrainian"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:784
+msgid "Urdu"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:785
+msgid "Uyghur"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:791, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:944
+msgid "Day(Light) Theme"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:797, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:840
+msgid "Keyboard Background Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:799, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:842
+msgid "Select background color for virtual keyboard."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:809, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:852
+msgid "Button Background Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:810, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:853
+msgid "Button Background"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:811, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:854
+msgid "Select background color for buttons on virtual keyboard."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:821, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:864
+msgid "Button Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:822, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:865
+msgid "Button Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:823, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:866
+msgid "Select text color for buttons on virtual keyboard."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:832, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:990
+msgid "Night(Dark) Theme"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:909
+msgid "Modal Popup"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:910
+msgid "Modal Popup Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:920
+msgid "Popup position:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:921
+msgid "Popup position"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:922
+msgid "Select the initial position of the popup display"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:925
+msgid "Right"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:926
+msgid "Center"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:927
+msgid "Left"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:933, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:934
+msgid "Draggable"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:935
+msgid "Controls dragging popup"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:945
+msgid "Select colors for the Day(Light) theme"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:954, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1000
+msgid "Select modal background-color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:964, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1010
+msgid "Key Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:965, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1011
+msgid "Key Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:966, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1012
+msgid "Select modal key color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:978, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1024
+msgid "Select modal text color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:991
+msgid "Select colors for the Night(Dark) theme"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1036
+msgid "Appearance and Behavior"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1037
+msgid "Set the modal popup appearance and behavior"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1045, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1046, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1351, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1352
+msgid "Border radius:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1061
+msgid "Animation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1062
+msgid "Animation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1063
+msgid "Modal entrance animation."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1067, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1442, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1461
+msgid "Bounce"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1068, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1443, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1462
+msgid "Fade"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1069, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1444, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1463
+msgid "Flip X"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1070, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1445, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1464
+msgid "Flip Y"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1071, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1446, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1465
+msgid "Scale"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1072
+msgid "Slide to right"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1073
+msgid "Slide to left"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1074
+msgid "Slide to top"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1075
+msgid "Slide to bottom"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1076, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1448, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1467
+msgid "Rotate"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1077, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1447, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1466
+msgid "Wobble"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1086
+msgid "Animation Duration:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1087
+msgid "Animation duration:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1091
+msgid " ms"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1102
+msgid "Popup Shadow:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1103
+msgid "Shadow"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1104
+msgid "Show popup shadow"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1111
+msgid "Overlay:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1112
+msgid "Overlay"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1113
+msgid "Show overlay layer"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1122
+msgid "Select modal overlay background-color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1132
+msgid "Floating popup:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1133
+msgid "Enable floating"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1134
+msgid "Leave a popup on the screen while scrolling"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1141
+msgid "Scroll:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1142
+msgid "Scroll"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1143
+msgid "Scrolling on the page while the popup is open."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1150
+msgid "Close anywhere:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1151
+msgid "Close anywhere"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1152
+msgid "Close by clicking outside the popup"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1158, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1159
+msgid "Reset Button"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1160
+msgid "Shows and hides the Reset button"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1166, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1167
+msgid "Hide Button"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1168
+msgid "Shows and hides the Hide Forever button"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1197
+msgid "Open Button"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1198
+msgid "Open Button Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1208
+msgid "Show Open Button:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1209
+msgid "Show Open Button"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1216, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1217
+msgid "Tabulation index:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1235
+msgid "Position:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1236
+msgid "Position"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1237
+msgid "Select a place on the page to display Floating Button."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1240
+msgid "Top Left"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1241
+msgid "Top Right"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1242
+msgid "Left Center"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1243
+msgid "Right Center"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1244
+msgid "Bottom Left"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1245
+msgid "Bottom Center"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1246
+msgid "Bottom Right"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1253
+msgid "Caption:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1254
+msgid "Button caption"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1266
+msgid "Icon:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1268
+msgid "Select icon for button."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1280
+msgid "Icon Position:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1281
+msgid "Icon Position"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1284
+msgid "Hide"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1285
+msgid "Before"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1286
+msgid "After"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1287
+msgid "Above"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1288
+msgid "Bellow"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1296, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1297
+msgid "Icon/Caption size:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1317
+msgid "Margin:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1318
+msgid "Button margin:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1334
+msgid "Padding:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1335
+msgid "Button padding:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1367
+msgid "Icon/Caption Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1369
+msgid "Select icon and text color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1379
+msgid "Icon/Caption Hover Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1380
+msgid "Text Hover Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1381
+msgid "Select icon and text hover color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1393
+msgid "Select button background color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1403
+msgid "Background Hover Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1404
+msgid "Background Hover Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1405
+msgid "Select button hover background color."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1420, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1421
+msgid "Entrance Timeout:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1425
+msgid " seconds."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1436
+msgid "Entrance Animation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1437
+msgid "Entrance Animation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1438
+msgid "Button Entrance animation."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1455
+msgid "Hover Animation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1456
+msgid "Hover Animation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1457
+msgid "Button hover animation."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1494
+msgid "Accessibility Statement Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1504
+msgid "Website Owner's Contact Info"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1505
+msgid "This contact info will be used in the Accessibility Statement, to comply with the WCAG 2.1, and therefore with the ADA and Section 508. We do not use personal information and abides by data privacy laws."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1512
+msgid "Statement source:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1514
+msgid "Select the accessibility statement source"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1517
+msgid "Generated by plugin"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1518
+msgid "Custom link"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1526
+msgid "Statement URL:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1527, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:415
+msgid "URL"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1528
+msgid "Insert the accessibility statement link"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1538
+msgid "Note: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1538
+msgid "If you are an agency purchasing for a client, you should enter your client's contact information."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1545
+msgid "Website's Owner Name:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1546
+msgid "Full Name"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1556
+msgid "Website's Owner Email:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1557
+msgid "E-mail"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1567
+msgid "Website's Owner Phone:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1568
+msgid "phone"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1578
+msgid "Accessibility Statement:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1579
+msgid "You can use special placeholders: {siteDomain}, {currentDate}, {contactEmail}, {contactName}, {contactPhone}. They will be replaced with their values accordingly."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1611
+msgid "Hot Keys"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1612
+msgid "Hot Keys Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1622
+msgid "Supported Keys"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1634
+msgid "Open Hot Key:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1635
+msgid "Open Hot Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1636
+msgid "Open the Accessibility Interface."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1652
+msgid "Keyboard Menus Navigation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1653
+msgid "Menus Navigation Hot Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1663
+msgid "Keyboard Headings Navigation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1664
+msgid "Headings Navigation Hot Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1674
+msgid "Keyboard Forms Navigation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1675
+msgid "Forms Navigation Hot Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1685
+msgid "Keyboard Buttons Navigation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1686
+msgid "Buttons Navigation Hot Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1696
+msgid "Keyboard Graphics Navigation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1697
+msgid "Graphics Navigation Hot Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1736, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2447, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:759
+msgid "Text to Speech"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1737
+msgid "Text to Speech Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1751
+msgid "Now used:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1759
+msgid "Select Language:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1766, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1767
+msgid "Language Code"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1778
+msgid "Audio Profile:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1779
+msgid "Audio Profile"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1780
+msgid "Optimize the synthetic speech for playback on different types of hardware."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1783
+msgid "Smart watches and other wearables"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1784
+msgid "Smartphones"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1785
+msgid "Earbuds or headphones"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1786
+msgid "Small home speakers"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1787
+msgid "Smart home speakers"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1788
+msgid "Home entertainment systems"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1789
+msgid "Car speakers"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1790
+msgid "Interactive Voice Response"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1798
+msgid "Speaking Speed:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1799
+msgid "Speaking rate:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1814
+msgid "Pitch:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1815
+msgid "Current pitch:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1835
+msgid "Select background color for text to speech tooltip."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1845
+msgid "Icon Color:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1846
+msgid "Icon Color"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1847
+msgid "Select icon color for text to speech tooltip."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1861, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1862
+msgid "Voice guide"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1863
+msgid "Highlight a piece of text and click Play to listen"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1864
+msgid "This piece of text will be read and played immediately after activating Text to Speech function"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1877
+msgid "API Key File:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1896
+msgid "Hot Keys understands the following modifiers: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1899
+msgid "The following special keys can be used for shortcuts: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1902
+msgid "Use the "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1904
+msgid " to create key combination and use "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1906
+msgid " to join multiple combinations: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1925, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:816
+msgid "Accessibility modes"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1926
+msgid "Select pre-built disability modes."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1932, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2109, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2338
+msgid "Section title"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1933, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2110, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2238, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2339
+msgid "Show section title"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1934, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2111, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2239, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2340
+msgid "Enable/disable the display of the current section  title."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1941
+msgid "Epilepsy Safe Mode:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1942, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:826
+msgid "Epilepsy Safe Mode"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1943
+msgid "This profile enables people with epilepsy to use the website safely by eliminating the risk of seizures that result from flashing or blinking animations and risky color combinations."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1950
+msgid "Visually Impaired Mode:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1951, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:838
+msgid "Visually Impaired Mode"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1952, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:840
+msgid "This mode adjusts the website for the convenience of users with visual impairments such as Degrading Eyesight, Tunnel Vision, Cataract, Glaucoma, and others."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1959
+msgid "Cognitive Disability Mode:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1960, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:850
+msgid "Cognitive Disability Mode"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1961, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:852
+msgid "This mode provides different assistive options to help users with cognitive impairments such as Dyslexia, Autism, CVA, and others, to focus on the essential elements of the website more easily."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1968
+msgid "ADHD Friendly Mode:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1969, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:862
+msgid "ADHD Friendly Mode"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1970, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:864
+msgid "This mode helps users with ADHD and Neurodevelopmental disorders to read, browse, and focus on the main website elements more easily while significantly reducing distractions."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1977
+msgid "Blindness Mode:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1978, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:874
+msgid "Blindness Mode"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1979
+msgid "This mode configures the website to be compatible with screen-readers such as JAWS, NVDA, VoiceOver, and TalkBack. A screen-reader is software for blind users that is installed on a  computer and smartphone, and websites must be compatible with it."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1991, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2008, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:270
+msgid "Online Dictionary"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1992
+msgid "Select Wikipedia Online Dictionary."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1998
+msgid "Section heading:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1999
+msgid "Section heading"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2000
+msgid "Enable/disable the display of the current section heading."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2007
+msgid "Online Dictionary:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2009
+msgid "Allows searching for phrases, abbreviations and concepts for Cognitive Disorders."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2016
+msgid "Dictionary language:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2017
+msgid "Dictionary language"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2018
+msgid "Select the Wikipedia language to search"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2021
+msgid "Auto"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2022
+msgid "العربية"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2023
+msgid "Asturianu"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2024
+msgid "Azərbaycanca"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2025
+msgid "Български"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2026
+msgid "Bân-lâm-gú / Hō-ló-oē"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2027
+msgid "বাংলা"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2028
+msgid "Беларуская"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2029
+msgid "Català"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2030
+msgid "Čeština"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2031
+msgid "Cymraeg"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2032
+msgid "Dansk"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2033
+msgid "Deutsch"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2034
+msgid "Eesti"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2035
+msgid "Ελληνικά"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2037
+msgid "Español"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2038
+msgid "Esperanto"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2039
+msgid "Euskara"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2040
+msgid "فارسی"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2041
+msgid "Français"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2042
+msgid "Galego"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2043
+msgid "Հայերեն"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2044
+msgid "हिन्दी"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2045
+msgid "Hrvatski"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2046
+msgid "Bahasa Indonesia"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2047
+msgid "Italiano"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2048
+msgid "עברית"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2049
+msgid "ქართული"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2050
+msgid "Latina"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2051
+msgid "Latviešu"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2052
+msgid "Lietuvių"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2053
+msgid "Magyar"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2054
+msgid "Македонски"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2055
+msgid "مصرى"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2056
+msgid "Bahasa Melayu"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2057
+msgid "Bahaso Minangkabau"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2058
+msgid "မြန်မာဘာသာ"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2059
+msgid "Nederlands"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2060
+msgid "日本語"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2061
+msgid "Norsk (bokmål)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2062
+msgid "Norsk (nynorsk)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2063
+msgid "Нохчийн"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2064
+msgid "Oʻzbekcha / Ўзбекча"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2065
+msgid "Polski"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2066
+msgid "Português"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2067
+msgid "Қазақша / Qazaqşa / قازاقشا"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2068
+msgid "Română"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2069
+msgid "Русский"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2070
+msgid "Sinugboanong Binisaya"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2071
+msgid "Slovenčina"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2072
+msgid "Slovenščina"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2073
+msgid "Српски / Srpski"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2074
+msgid "Srpskohrvatski / Српскохрватски"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2075
+msgid "Suomi"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2076
+msgid "Svenska"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2077
+msgid "தமிழ்"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2078
+msgid "Татарча / Tatarça"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2079
+msgid "ภาษาไทย"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2080
+msgid "Тоҷикӣ"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2081
+msgid "تۆرکجه"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2082
+msgid "Türkçe"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2083
+msgid "Українська"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2084
+msgid "اردو"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2085
+msgid "Tiếng Việt"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2086
+msgid "Volapük"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2087
+msgid "Winaray"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2088
+msgid "粵語"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2089
+msgid "中文"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2090
+msgid "한국어"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2102, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:309
+msgid "Readable Experience"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2103
+msgid "Tools enable users to adjust how the content of your site is displayed, so it is as readable as possible to their particular disability."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2118
+msgid "Content Scaling:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2119, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:319
+msgid "Content Scaling"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2120
+msgid "The option allows scaling the website content. "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2127
+msgid "Readable Font:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2128, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:348
+msgid "Readable Font"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2129
+msgid "The option converts the content font to a more readable one."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2136
+msgid "Dyslexia Friendly:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2137, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:359
+msgid "Dyslexia Friendly"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2138
+msgid "The option adapts the font to be more convenient for Dyslexic users."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2145
+msgid "Highlight Titles:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2147
+msgid "The option highlights the titles with borders for all site content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2154
+msgid "Highlight Links:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2156
+msgid "The option highlights the links with borders for all site content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2163
+msgid "Text Magnifier:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2165
+msgid "The option allows you to display specific text in the magnifier on hover."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2172
+msgid "Font Sizing:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2173, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:401
+msgid "Font Sizing"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2174
+msgid "The option allows you to change the text font size as a percentage."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2181
+msgid "Line Height:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2182, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:413, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:414
+msgid "Line Height"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2183
+msgid "The option allows you to change the font line-height as a percentage"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2190
+msgid "Letter Spacing:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2191, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:425
+msgid "Letter Spacing"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2192
+msgid "The option allows you to change the text letter spacing as a percentage."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2199
+msgid "Align Center:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2200
+msgid "Align Center"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2201
+msgid "The option aligns the website content to the center."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2208
+msgid "Align Left:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2209
+msgid "Align Left"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2210
+msgid "The option aligns the website content to the left."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2217
+msgid "Align Right:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2218
+msgid "Align Right"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2219
+msgid "The option aligns the website content to the right."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2230, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:481
+msgid "Visually Pleasing Experience"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2231
+msgid "Tools relating to the colorization of your website."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2237
+msgid "Section title:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2246
+msgid "Dark Contrast:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2247, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:491
+msgid "Dark Contrast"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2248
+msgid "The option sets a dark contrast for the content of the entire site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2255
+msgid "Light Contrast:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2256, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:501
+msgid "Light Contrast"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2257
+msgid "The option sets a light contrast for the content of the entire site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2264
+msgid "Monochrome:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2265, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:511
+msgid "Monochrome"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2266
+msgid "The option applies a monochrome color scheme for the entire site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2273
+msgid "High Saturation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2274, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:537
+msgid "High Saturation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2275
+msgid "The option adds color saturation for the entire site content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2282
+msgid "High Contrast:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2283, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:521
+msgid "High Contrast"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2284
+msgid "The option increases color contrast for the entire site content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2291
+msgid "Low Saturation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2292, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:553
+msgid "Low Saturation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2293
+msgid "The option minimizes color saturation for the entire site content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2300
+msgid "Text Colors:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2301
+msgid "Text Colors"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2302
+msgid "The option displays a color picker to adjust the text color of website content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2309
+msgid "Title Colors:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2310
+msgid "Title Colors"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2311
+msgid "The option displays a color picker to adjust the title color of website content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2318
+msgid "Background Colors:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2319
+msgid "Background Colors"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2320
+msgid "The option displays a color picker to adjust the background color of website content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2331, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:611
+msgid "Easy Orientation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2332
+msgid "Tools for people with visual impairments, cognitive disabilities, or motor impairments to orient better at the site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2347
+msgid "Mute Sounds:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2348, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:621
+msgid "Mute Sounds"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2349
+msgid "The option mutes all sounds on the site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2356
+msgid "Hide Images:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2357, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:631
+msgid "Hide Images"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2358
+msgid "The option hides all images on the site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2365
+msgid "Virtual Keyboard:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2367
+msgid "The option enables the virtual keyboard when any one of the input fields is active."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2374
+msgid "Reading Guide:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2376
+msgid "The option displays a guideline that follows the cursor and helps to concentrate only on the specific text."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2383
+msgid "Useful Links:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2384, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:141
+msgid "Useful Links"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2385
+msgid "The option displays a select list of useful site links to get the necessary info without site research."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2392
+msgid "Stop Animations:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2393, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:678
+msgid "Stop Animations"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2394
+msgid "The option allows disabling animations on the site."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2401
+msgid "Reading Mask:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2403
+msgid "The option creates a horizontal mask of a certain height that follows the cursor and allows you to select and focus only on a certain part of the content."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2410
+msgid "Highlight Hover:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2412
+msgid "The option highlights the hover area by borders."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2419
+msgid "Highlight Focus:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2421
+msgid "The option highlights the focus area by borders."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2428
+msgid "Big Dark Cursor:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2429, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:727
+msgid "Big Dark Cursor"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2430
+msgid "The option enables a large black cursor instead of the regular one."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2437
+msgid "Big Light Cursor:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2438, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:737
+msgid "Big Light Cursor"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2439
+msgid "The option enables a large white cursor instead of the regular one."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2446
+msgid "Text to Speech:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2448
+msgid "The option enables the Text-to-Speech feature. Audio is generated when the user highlights text. Before activating this feature, please upload the API key file on the \"Text to Speech\" tab."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2455
+msgid "Keyboard Navigation:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2456
+msgid "Keyboard Navigation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2457
+msgid "The option enables a keyboard navigation feature."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2466
+msgid "WordPress Themes & Plugins compatibility"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2467
+msgid "A group of settings to improve the compatibility of the plugin with other plugins or themes."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2473
+msgid "Late CSS and JS loading"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2474
+msgid "Enables later loading of styles and scripts. Use this option if some of the pages are missing Readable styles or scripts."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2480
+msgid "CopyScape Skip"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2481
+msgid "Ignore the markup of the plugin interface when parsing with the CopyScape"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:71
+msgid "Increase"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:72, wp-content/plugins/readabler/src/Merkulove/Readabler/FrontScripts.php:196
+msgid "Default"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:76
+msgid "Decrease"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:143
+msgid "Select an option"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:171
+msgid "Maroon"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:175
+msgid "Red"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:179
+msgid "Orange"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:183
+msgid "Yellow"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:187
+msgid "Olive"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:191
+msgid "Green"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:195
+msgid "Purple"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:199
+msgid "Fuchsia"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:203
+msgid "Lime"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:207
+msgid "Teal"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:211
+msgid "Aqua"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:215
+msgid "Blue"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:219
+msgid "Navy"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:223
+msgid "Black"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:227
+msgid "White"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:243
+msgid "Change Color to "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:280, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:281
+msgid "Search the online dictionary..."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:282
+msgid "Start typing to search in Wikipedia"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:284
+msgid "Clear search results"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:320
+msgid "Content Size"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:402
+msgid "Font Size"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:426
+msgid "Letter Space"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:437
+msgid "Left Aligned"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:447
+msgid "Center Aligned"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:457
+msgid "Right Aligned"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:564
+msgid "Adjust Text Colors"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:574
+msgid "Adjust Title Colors"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:584
+msgid "Adjust Background Colors"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:780
+msgid "Navigation Keys"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:791
+msgid "Link navigator"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:827
+msgid "Dampens color and removes blinks"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:828
+msgid "This mode enables people with epilepsy to use the website safely by eliminating the risk of seizures that result from flashing or blinking animations and risky color combinations."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:839
+msgid "Improves website's visuals"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:851
+msgid "Helps to focus on specific content"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:863
+msgid "Reduces distractions and improve focus"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:875
+msgid "Allows using the site with your screen-reader"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:876
+msgid "This mode configures the website to be compatible with screen-readers such as JAWS, NVDA, VoiceOver, and TalkBack. A screen-reader is software for blind users that is installed on a computer and smartphone, and websites must be compatible with it."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:65
+msgid "Error number: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:66
+msgid " in "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:67, wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:108
+msgid " on line "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:103
+msgid "Error: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:106
+msgid "In: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:113
+msgid "If you think the error is caused by an invalid key file then "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/ErrorHandler.php:114, wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:354
+msgid "Reset API Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/FrontScripts.php:195
+msgid "Learn more in Wikipedia"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/FrontScripts.php:197
+msgid "Home"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/FrontScripts.php:198
+msgid ""
+"Hide Accessibility Interface? \n"
+"\n"
+"Please note: If you choose to hide the accessibility interface, you won't be able to see it anymore, unless you clear clear cookies for this site. Are you sure that you wish to hide the interface?"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:77
+msgid "Failed to get the list of languages. The request failed. It looks like a problem with your API Key File. Make sure that you are using the correct key file, and that the quotas have not been exceeded. If you set security restrictions on a key, make sure that the current domain is added to the exceptions."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:83
+msgid "Select Language"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:93, wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:120, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:71
+msgid "Language"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:107
+msgid "The list includes both standard and"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:109
+msgid "WaveNet voices"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:110
+msgid "WaveNet voices are higher quality voices with different"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:112
+msgid "pricing"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:113
+msgid "in the list, they have the voice type \"WaveNet\"."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:121
+msgid "Voice"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:122
+msgid "Gender"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:295
+msgid "Your browser does not support the audio element."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:338, wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:358
+msgid "API Key"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:348
+msgid "Drop Key file here or click to upload."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:345
+msgid "API Key file exist"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:346
+msgid "Drop Key file here or click to upload"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:358
+msgid "Drag and drop or click on the form to add "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/TabTextToSpeech.php:353
+msgid "Drag and drop or click on the form to replace API key. |"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/CheckCompatibility.php:215, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:315, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:528, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:534, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:532
+msgid "Readabler"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/CheckCompatibility.php:240
+msgid "The minimum PHP version required for Readabler plugin is 5.6.0."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:262
+msgid "General"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:263
+msgid "General Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:289, wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:290
+msgid "Custom CSS"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:296
+msgid "Add custom CSS here."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:323
+msgid "Assignments"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:324
+msgid "Assignments Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:373
+msgid "Activation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:374, wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:350
+msgid "Plugin Activation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:400
+msgid "Status"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:401
+msgid "System Status"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:466, wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:467
+msgid "Updates"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:493
+msgid "Uninstall"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:494
+msgid "Uninstall Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:501
+msgid "Delete plugin only"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:502
+msgid "Delete plugin and settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:503
+msgid "Delete plugin, settings and data"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:140, wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:140
+msgid "Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:161
+msgid "Documentation"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:142, wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:142
+msgid "Plugins"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:163
+msgid "Rate this plugin:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:439
+msgid "Please visit the plugin page on the Envato market to "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:441
+msgid "download "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:443
+msgid "the latest version."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterPlugins.php:90, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterPlugins.php:123
+msgid "Active Plugins"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:52
+msgid "Server Environment"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:71
+msgid "Operating System"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:72
+msgid "Software"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:73
+msgid "MySQL version"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:74
+msgid "PHP Version"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:75
+msgid "Write Permissions"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:76
+msgid "ZIP Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:77
+msgid "cURL Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:78
+msgid "Elementor Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:79
+msgid "WPBakery Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:80
+msgid "allow_url_fopen"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:81
+msgid "DOM Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:82
+msgid "XML Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:83
+msgid "BCMath Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:84
+msgid "mbstring Installed"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:85
+msgid "Server Time Sync"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:132, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:224, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:248, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:272, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:297, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:323, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:349, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:375, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:401, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:444, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:463, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:491
+msgid "YES"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:132, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:224, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:248, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:272, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:297, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:323, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:349, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:375, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:401, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:444, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:463, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:491
+msgid "NO"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:134
+msgid "You must enable allow_url_fopen option in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:198
+msgid "We recommend to use php 5.6 or higher"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:250
+msgid "You must enable CURL (Client URL Library) in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:274
+msgid "You need install and activate Elementor builder. Go to Elementor site (elementor.com) for details."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:299
+msgid "You need install and activate WPBakery builder. Go to WPBakery site (wpbakery.com) for details."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:325
+msgid " You must enable DOM extension (Document Object Model) in PHP. It's used for HTML processing. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:351
+msgid "You must enable XML extension in PHP. It's used for XML processing. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:377
+msgid "You must enable BCMath extension (Arbitrary Precision Mathematics) in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:403
+msgid "You must enable mbstring extension (Multibyte String) in PHP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:446, wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:465
+msgid "Failed to check time synchronization on your server. Your server's clock must be in sync with network time protocol - NTP."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:493
+msgid " Your server's clock is not in sync with network time protocol - NTP. Contact the support service of your hosting provider. They know what to do."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:573
+msgid "WordPress root directory"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:581
+msgid "WordPress root uploads directory"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:587
+msgid ".htaccess file"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:604
+msgid "All right"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterServer.php:599
+msgid "There are some writing permissions issues with the following directories/files:"
+msgstr ""
+
+#. translators: %s: Codex URL
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterTheme.php:211
+msgctxt "System Info"
+msgid "If you want to modify the source code of your theme, we recommend using a <a href=\"%s\">child theme</a>."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:49
+msgid "WordPress Environment"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:64
+msgid "Version"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:65
+msgid "Site URL"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:66
+msgid "Home URL"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:67
+msgid "WP Multisite"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:68
+msgid "Max Upload Size"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:69
+msgid "Memory limit"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:70
+msgid "Permalink Structure"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:72
+msgid "Timezone"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:73
+msgid "Admin Email"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:74
+msgid "Debug Mode"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:142
+msgid "We recommend setting memory to at least 64M. For more information, ask your hosting provider."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:186
+msgid "Yes"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:186
+msgid "No"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:250
+msgid "Plain"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:360
+msgid "Active"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/ReporterWordPress.php:360
+msgid "Inactive"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:99
+msgid "Plugin settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:157
+msgid "Helpful links"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:167
+msgid "Get help"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:171
+msgid "Rate this plugin"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:177
+msgid "More plugins"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:270, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:294, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:314
+msgid "Readabler Settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:271, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:295
+msgid "Readabler for "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:480
+msgid "Settings saved!"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:504
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:510
+msgid "Invalid purchase code."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:539
+msgid "v."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:545
+msgid "Save changes"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:102
+msgid "CodeCanyon License"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:112
+msgid "Not Activated"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:107
+msgid "Activated"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:288
+msgid "Subscribe to updates"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:289
+msgid "Sign up for the newsletter to be the first to know about news and discounts."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:291
+msgid "Hurray! We received your Subscription request. Check your inbox for an email from us."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:292
+msgid "Oh! Sorry, but we cannot send messages to this email."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:293
+msgid "Oops! Something went wrong. Please try later."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:300
+msgid "Your Name"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:311
+msgid "Your E-Mail"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:322
+msgid "Subscribe"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:356
+msgid "Purchase code"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:357
+msgid "Enter your CodeCanyon purchase code. Allowed only one Purchase Code per website."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:379
+msgid "Activation FAQ'S"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:383
+msgid "Where is my Purchase Code?"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:386
+msgid "The purchase code is a unique combination of characters that confirms that you bought the plugin. You can find your purchase code in "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:387
+msgid "your account"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:388
+msgid " on the CodeCanyon. Learn more about "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:389
+msgid "How to find your purchase code"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:390, wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:424
+msgid " ."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:396
+msgid "Can I use one Purchase Code on multiple sites?"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:400
+msgid "No, this is prohibited by license terms. You can use the purchase code on only one website at a time. Learn more about "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:401
+msgid "Envato License"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:402
+msgid " terms. "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:408
+msgid "What are the benefits of plugin activation?"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:412
+msgid "Activation of the plugin allows you to use all the functionality of the plugin on your site. In addition, in some cases, activating the plugin allows you to access additional features and capabilities of the plugin. Also, using an authored version of the plugin, you can be sure that you will not violate the license."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:418
+msgid "What should I do if my Purchase Code does not work?"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:422
+msgid "There are several reasons why the purchase code may not work on your site. Learn more why your "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:423
+msgid "Purchase Code is Not Working"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:256
+msgid "Matching Method"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:257
+msgid "Should all or any assignments be matched?"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:259
+msgid "ALL"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:260
+msgid "ANY"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:262
+msgid "The plugin is enabled on the page if ALL the selected rules matched, or if ANY of the selected rules matched"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:267
+msgid "WordPress Content"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:270, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:294, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:304, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:335, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:361, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:391, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:418, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:442, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:466, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:521, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:618, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:645
+msgid "Ignore"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:271, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:295, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:305, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:336, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:362, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:392, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:419, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:443, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:467, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:522, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:619, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:646
+msgid "Include"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:272, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:296, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:306, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:337, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:363, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:393, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:420, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:444, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:468, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:523, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:620, wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:647
+msgid "Exclude"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:277
+msgid "Select on what page types or categories the assignment should be active."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:291
+msgid "Home Page"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:302
+msgid "Menu Items"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:310
+msgid "Select the menu items to assign to."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:332
+msgid "Date & Time"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:347
+msgid "The date and time assignments use the date/time of your servers, not that of the visitors system."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:349
+msgid "Current date/time:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:358
+msgid "Languages"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:367
+msgid "Select the languages to assign to."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:388
+msgid "User Roles"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:397
+msgid "Select the user roles to assign to."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:425
+msgid "Enter (part of) the URLs to match."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:426
+msgid "Use a new line for each different match."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:439
+msgid "Devices"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:448
+msgid "Select the devices to assign to. Keep in mind that device detection is not always 100% accurate. Users can setup their device to mimic other devices."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:452
+msgid "Desktop"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:453
+msgid "Tablet"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:454
+msgid "Mobile"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:463
+msgid "Operating Systems"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:472
+msgid "Select the operating systems to assign to. Keep in mind that operating system detection is not always 100% accurate. Users can setup their browser to mimic other operating systems."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:476
+msgid "Windows (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:477
+msgid "Windows 10"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:478
+msgid "Windows 8"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:479
+msgid "Windows 7"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:480
+msgid "Windows Vista"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:481
+msgid "Windows Server 2003"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:482
+msgid "Windows XP"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:483
+msgid "Windows 2000 sp1"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:484
+msgid "Windows 2000"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:485
+msgid "Windows NT 4.0"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:486
+msgid "Windows Me"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:487
+msgid "Windows 98"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:488
+msgid "Windows 95"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:489
+msgid "Windows CE"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:490
+msgid "Mac OS (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:491
+msgid "Mac OSX (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:492
+msgid "Mac OSX El Capitan"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:493
+msgid "Mac OSX Yosemite"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:494
+msgid "Mac OSX Mavericks"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:495
+msgid "Mac OSX Mountain Lion"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:496
+msgid "Mac OSX Lion"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:497
+msgid "Mac OSX Snow Leopard"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:498
+msgid "Mac OSX Leopard"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:499
+msgid "Mac OSX Tiger"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:500
+msgid "Mac OSX Panther"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:501
+msgid "Mac OSX Jaguar"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:502
+msgid "Mac OSX Puma"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:503
+msgid "Mac OSX Cheetah"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:504
+msgid "Mac OS (classic)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:505
+msgid "Linux"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:506
+msgid "Open BSD"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:507
+msgid "Sun OS"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:508
+msgid "QNX"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:509
+msgid "BeOS"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:510
+msgid "OS/2"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:518
+msgid "Browsers"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:527
+msgid "Select the browsers to assign to. Keep in mind that browser detection is not always 100% accurate. Users can setup their browser to mimic other browsers."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:530
+msgid "Browsers:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:535
+msgid "Chrome (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:536
+msgid "Chrome 61-70"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:537
+msgid "Chrome 51-60"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:538
+msgid "Chrome 41-50"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:539
+msgid "Chrome 31-40"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:540
+msgid "Chrome 21-30"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:541
+msgid "Chrome 11-20"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:542
+msgid "Chrome 1-10"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:543
+msgid "Firefox (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:544
+msgid "Firefox 61-70"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:545
+msgid "Firefox 51-60"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:546
+msgid "Firefox 41-50"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:547
+msgid "Firefox 31-40"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:548
+msgid "Firefox 21-30"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:549
+msgid "Firefox 11-20"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:550
+msgid "Firefox 1-10"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:551
+msgid "Internet Explorer (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:552
+msgid "Internet Explorer Edge"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:553
+msgid "Edge 15"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:554
+msgid "Edge 14"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:555
+msgid "Edge 13"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:556
+msgid "Edge 12"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:557
+msgid "Internet Explorer 11"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:558
+msgid "Internet Explorer 10.6"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:559
+msgid "Internet Explorer 10.0"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:560
+msgid "Internet Explorer 10"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:561
+msgid "Internet Explorer 9"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:562
+msgid "Internet Explorer 8"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:563
+msgid "Internet Explorer 7"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:564
+msgid "Internet Explorer 1-6"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:565
+msgid "Opera (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:566
+msgid "Opera 51-60"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:567
+msgid "Opera 41-50"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:568
+msgid "Opera 31-40"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:569
+msgid "Opera 21-30"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:570
+msgid "Opera 11-20"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:571
+msgid "Opera 1-10"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:572
+msgid "Safari (All)"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:573
+msgid "Safari 11"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:574
+msgid "Safari 10"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:575
+msgid "Safari 9"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:576
+msgid "Safari 8"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:577
+msgid "Safari 7"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:578
+msgid "Safari 6"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:579
+msgid "Safari 5"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:580
+msgid "Safari 4"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:581
+msgid "Safari 1-3"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:587
+msgid "Mobile Browsers:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:592
+msgid "All"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:593
+msgid "Android"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:594
+msgid "Android Chrome"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:595
+msgid "Blackberry"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:596
+msgid "IE Mobile"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:597
+msgid "iPad"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:598
+msgid "iPhone"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:599
+msgid "iPod Touch"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:600
+msgid "NetFront"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:601
+msgid "Nokia"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:602
+msgid "Opera Mini"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:603
+msgid "Opera Mobile"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:604
+msgid "UC Browser"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:615
+msgid "IP Addresses"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:625
+msgid "IP Addresses / Ranges"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:631
+msgid "List of IP addresses or IP ranges. Example: "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:632
+msgid "46.33.233.31"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:633
+msgid "46.0-46.1"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:634
+msgid "46"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:642
+msgid "Custom PHP"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:652
+msgid "Enter a piece of PHP code to evaluate. The code must return the value true or false."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabAssignments.php:654
+msgid "For instance:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabStatus.php:238
+msgid "Some data will be sent to our server to verify purchase and to ensure that a plugin is compatible with your install. We will never collect any confidential data. All data is stored anonymously."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUninstall.php:84
+msgid "Removal settings:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUninstall.php:111
+msgid "Choose which data to delete upon using the \"Delete\" action in the \"Plugins\" admin page."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUninstall.php:117
+msgid "Delete plugin"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUpdates.php:80
+msgid "Check for updates:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUpdates.php:83
+msgid "SSL verification:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUpdates.php:98
+msgid "Clear cache"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUpdates.php:119
+msgid "SSL verification"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUpdates.php:120
+msgid "Enable to activate the SSL check when receiving updates"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:611
+msgid "Icon Library"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:612
+msgid "Upload SVG"
+msgstr ""
