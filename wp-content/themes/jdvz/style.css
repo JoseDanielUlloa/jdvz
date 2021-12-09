@@ -379,7 +379,17 @@ a:visited {
 }
 
 footer {
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+
+footer .credits a {
+  border-bottom: 0.1rem solid var(--color-gray-dark);
+}
+
+footer .credits a:hover {
+  border-bottom: none;
 }
 
 /* 375px styles */
