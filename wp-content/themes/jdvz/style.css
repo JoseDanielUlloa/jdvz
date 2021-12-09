@@ -87,11 +87,12 @@ a:visited {
   display: flex;
   align-items: center;
   grid-column: 1 / -1;
-  position: relative;
 }
 
 .main-header {
+  position: relative;
   justify-content: space-between;
+  z-index: 1002;
 }
 
 .skip-link {
