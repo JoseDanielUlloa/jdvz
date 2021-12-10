@@ -384,6 +384,10 @@ footer {
   text-align: center;
 }
 
+footer p {
+  line-height: 1.7rem;
+}
+
 footer .credits a {
   border-bottom: 0.1rem solid var(--color-gray-dark);
 }
