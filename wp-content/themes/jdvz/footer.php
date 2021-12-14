@@ -1,4 +1,4 @@
-    <footer>
+    <footer class="main-footer">
         <!-- Social Media Links -->
         <div class="social-nav-wrapper">
             <nav id="social-nav" class="social-nav" aria-label="JDVz's Social Media">

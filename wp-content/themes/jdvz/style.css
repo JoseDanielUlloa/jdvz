@@ -81,7 +81,8 @@ a:visited {
 
 /***** Header & Footer *****/
 
-.main-header, footer {
+.main-header, .main-footer {
+  position: relative;
   background: var(--color-primary);
   padding: 20px 5%;
   display: flex;
@@ -90,7 +91,6 @@ a:visited {
 }
 
 .main-header {
-  position: relative;
   justify-content: space-between;
   z-index: 1002;
 }
@@ -378,21 +378,21 @@ a:visited {
   visibility: visible;
 }
 
-footer {
+.main-footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-footer p {
+.main-footer p {
   line-height: 1.7rem;
 }
 
-footer .credits a {
+.main-footer .credits a {
   border-bottom: 0.1rem solid var(--color-gray-dark);
 }
 
-footer .credits a:hover {
+.main-footer .credits a:hover {
   border-bottom: none;
 }
 
@@ -479,4 +479,44 @@ footer .credits a:hover {
   .left-nav > ul > li > a {
     font-size: 1.5em;
   }
+}
+
+/***** Not found page styles *****/
+
+.not-found-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 0 5%;
+  height: 80vh;
+}
+
+.not-found-text h1 {
+  font: italic 700 3em 'Roboto Condensed', sans-serif;
+}
+
+.not-found-text h1, 
+.not-found-text h2, 
+.not-found-text h3 {
+  text-shadow: 2px 2px 4px var(--color-light);
+}
+
+.not-found-effect {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  background: repeating-linear-gradient(#111, #111 50%, #ccc 50%, var(--color-light));
+  background-size: 5px 5px;
+  filter: url(#noise-filter);
+}
+
+.noise-svg {
+  width: 0;
+  height: 0;
 }
