@@ -91,8 +91,8 @@
                     </li>
                     <li class="show-on-desktop">
                         <a href="<?php echo site_url('/contact/') ?>">
-                            <i aria-hidden="true" class="far fa-envelope" title="Contact form"></i>
-                            <span class="sr-only">Contact form</span>
+                            <i aria-hidden="true" class="far fa-envelope" title="Contact page"></i>
+                            <span class="sr-only">Contact page</span>
                         </a>
                     </li>
                 </ul>
