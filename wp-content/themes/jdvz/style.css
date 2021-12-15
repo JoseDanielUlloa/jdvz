@@ -370,6 +370,8 @@ a:visited {
   -moz-border-radius: var(--border-radius);
   -webkit-border-radius: var(--border-radius);
   box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
   transition: var(--ease-out);
   -moz-transition: var(--ease-out);
   -webkit-transition: var(--ease-out);
