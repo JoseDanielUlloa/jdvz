@@ -487,7 +487,18 @@ a:visited {
   }
 }
 
-/***** Search form *****/
+/***** Default page styles *****/
+
+.default-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 20px 5%;
+}
+
+/***** Search form styles *****/
 
 .searchform {
   display: flex;
