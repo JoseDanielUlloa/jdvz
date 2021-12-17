@@ -435,6 +435,16 @@ a:visited {
     display: none;
   }
 
+/***** Contact page styles *****/
+  #nf-field-1-container, #nf-field-2-container {
+    width: 45%;
+    float: left;
+    clear: right;
+  }
+
+  #nf-field-1-container {
+    margin: 0 10% 0 0;
+  }
 }
 
 /* 992px styles */
