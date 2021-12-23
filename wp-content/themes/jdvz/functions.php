@@ -1,9 +1,10 @@
 <?php
 
-// Add dynamic title tag and custom logo support
+// Add dynamic title tag, custom logo and thumbnails support
 function jdvz_theme_support() {
     add_theme_support('title-tag');
     add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'jdvz_theme_support');
 
