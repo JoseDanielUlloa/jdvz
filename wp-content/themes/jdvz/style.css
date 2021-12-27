@@ -425,6 +425,13 @@ a:visited {
   .social-nav > ul > li > a {
     padding: 0.5rem 1rem;
   }
+
+  /***** Posts styles *****/
+
+  .posts-nav > ul {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /***** 768px styles *****/
@@ -516,6 +523,35 @@ a:visited {
   text-align: center;
   grid-column: 1 / -1;
   padding: 20px 5%;
+}
+
+/***** Post styles *****/
+
+.posts-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.posts-nav > ul > li > a  {
+  display: block;
+  position: relative;
+  padding: 0.7rem;
+  color: var(--color-gray-dark);
+  font: italic 700 1.5em 'Roboto Condensed', sans-serif;
+  line-height: 1em;
+  transition: var(--ease-in-out);
+  -moz-transition: var(--ease-in-out);
+  -webkit-transition: var(--ease-in-out);
+}
+
+.posts-nav > ul > li > a:hover, 
+.posts-nav > ul > li > a:active, 
+.posts-nav > ul > li > a:focus {
+  background-color: var(--color-gray-dark);
+  color: var(--color-light);
+  border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
 }
 
 /***** Contact page styles *****/
