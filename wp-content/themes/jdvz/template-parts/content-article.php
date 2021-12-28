@@ -16,7 +16,9 @@
     </p>
     
     <!-- Content -->
-    <?php the_content(); ?>
+    <div class="post-content">
+        <?php the_content(); ?>
+    </div>
 
     <!-- Previous & Next posts -->
     <nav id="posts-nav" class="posts-nav" aria-label="Posts navigation">

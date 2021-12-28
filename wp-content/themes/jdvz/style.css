@@ -44,6 +44,7 @@ body {
 }
 
 a {
+  color: var(--color-gray-dark);
   text-decoration: none;
 }
 
@@ -432,6 +433,17 @@ a:visited {
   transition: var(--ease-in-out);
   -moz-transition: var(--ease-in-out);
   -webkit-transition: var(--ease-in-out);
+}
+
+.post-content a {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.post-content a:hover, 
+.post-content a:active, 
+.post-content a:focus {
+  text-decoration: underline;
 }
 
 .posts-nav {
