@@ -479,6 +479,37 @@ a:visited {
   -webkit-border-radius: var(--border-radius);
 }
 
+/***** Comments styles *****/
+
+#wpd-bubble-wrapper > #wpd-bubble-count.wpd-new-comments .wpd-new-comments-count {
+  background-color: var(--color-tertiary);
+}
+
+.wpd-inline-form button.wpd-inline-submit, 
+#wpd-post-rating .wpd-rating-wrap .wpd-rate-starts, 
+#wpdcom .wpd-prim-button {
+  cursor: pointer;
+  font: italic 700 1em 'Roboto Condensed', sans-serif;
+}
+
+#wpdcom .wpd-blog-administrator .wpd-comment-author, 
+#wpdcom .wpd-blog-administrator .wpd-comment-author a, 
+#wpdcom .wpd-blog-administrator .wpd-comment-label {
+  color: var(--color-gray-dark);
+}
+
+#wpdcom .wpd-comment-footer .wpd-vote-up:hover svg, 
+#wpdcom .wpd-comment-footer .wpd-vote-up:active svg, 
+#wpdcom .wpd-comment-footer .wpd-vote-up:focus svg {
+  fill: var(--color-secondary);
+}
+
+#wpdcom .wpd-comment-footer .wpd-vote-down:hover svg, 
+#wpdcom .wpd-comment-footer .wpd-vote-down:active svg, 
+#wpdcom .wpd-comment-footer .wpd-vote-down:focus svg {
+  fill: var(--color-tertiary);
+}
+
 /***** Search form styles *****/
 
 .searchform {
