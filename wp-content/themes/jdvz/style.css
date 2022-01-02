@@ -18,6 +18,9 @@
   --color-light: #fff;
   --color-gray-dark: #000;
 
+  /***** Fonts *****/
+  --font-button: italic 700 1em 'Roboto Condensed', sans-serif;
+
   /***** Border radius *****/
   --border-radius: 10px;
 
@@ -489,7 +492,7 @@ a:visited {
 #wpd-post-rating .wpd-rating-wrap .wpd-rate-starts, 
 #wpdcom .wpd-prim-button {
   cursor: pointer;
-  font: italic 700 1em 'Roboto Condensed', sans-serif;
+  font: var(--font-button);
 }
 
 #wpdcom .wpd-blog-administrator .wpd-comment-author, 
@@ -566,7 +569,7 @@ a:visited {
   -webkit-border-radius: var(--border-radius);
   background-color: var(--color-secondary) !important;
   width: 20% !important;
-  font: italic 700 1em 'Roboto Condensed', sans-serif;
+  font: var(--font-button);
   text-transform: uppercase;
   cursor: pointer;
 }
