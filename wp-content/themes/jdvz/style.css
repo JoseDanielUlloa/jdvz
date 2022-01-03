@@ -460,7 +460,7 @@ a:visited {
   padding: 0.7rem;
   color: var(--color-gray-dark);
   font: italic 700 1.5em 'Roboto Condensed', sans-serif;
-  line-height: 1em;
+  line-height: 1.25em;
   transition: var(--ease-in-out);
   -moz-transition: var(--ease-in-out);
   -webkit-transition: var(--ease-in-out);
@@ -480,6 +480,46 @@ a:visited {
   border-radius: var(--border-radius);
   -moz-border-radius: var(--border-radius);
   -webkit-border-radius: var(--border-radius);
+}
+
+.posts-nav > ul > li > a:hover > .fa-arrow-left, 
+.posts-nav > ul > li > a:active > .fa-arrow-left, 
+.posts-nav > ul > li > a:focus > .fa-arrow-left {
+  animation: arrow-left 1s steps(15) infinite;
+  -moz-animation: arrow-left 1s steps(15) infinite;
+  -webkit-animation: arrow-left 1s steps(15) infinite;
+}
+
+@keyframes arrow-left {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+  transform: translateX(-10px);
+  }
+  100% {
+  transform: translateX(0px);
+  }
+}
+
+.posts-nav > ul > li > a:hover > .fa-arrow-right, 
+.posts-nav > ul > li > a:active > .fa-arrow-right, 
+.posts-nav > ul > li > a:focus > .fa-arrow-right {
+  animation: arrow-right 1s steps(15) infinite;
+  -moz-animation: arrow-right 1s steps(15) infinite;
+  -webkit-animation: arrow-right 1s steps(15) infinite;
+}
+
+@keyframes arrow-right {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+  transform: translateX(10px);
+  }
+  100% {
+  transform: translateX(0px);
+  }
 }
 
 /***** Comments styles *****/
@@ -639,12 +679,6 @@ a:visited {
     padding: 0.5rem 1rem;
   }
 
-  /***** Posts styles *****/
-
-  .posts-nav > ul {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 /***** 768px styles *****/
