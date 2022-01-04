@@ -66,6 +66,30 @@ a:visited {
   border: 0;
 }
 
+@keyframes move-left {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+  transform: translateX(-10px);
+  }
+  100% {
+  transform: translateX(0px);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+  transform: translateX(10px);
+  }
+  100% {
+  transform: translateX(0px);
+  }
+}
+
 /***** Resets *****/
 
 .button-reset {
@@ -485,41 +509,17 @@ a:visited {
 .posts-nav > ul > li > a:hover > .fa-arrow-left, 
 .posts-nav > ul > li > a:active > .fa-arrow-left, 
 .posts-nav > ul > li > a:focus > .fa-arrow-left {
-  animation: arrow-left 1s steps(15) infinite;
-  -moz-animation: arrow-left 1s steps(15) infinite;
-  -webkit-animation: arrow-left 1s steps(15) infinite;
-}
-
-@keyframes arrow-left {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-  transform: translateX(-10px);
-  }
-  100% {
-  transform: translateX(0px);
-  }
+  animation: move-left 1s steps(15) infinite;
+  -moz-animation: move-left 1s steps(15) infinite;
+  -webkit-animation: move-left 1s steps(15) infinite;
 }
 
 .posts-nav > ul > li > a:hover > .fa-arrow-right, 
 .posts-nav > ul > li > a:active > .fa-arrow-right, 
 .posts-nav > ul > li > a:focus > .fa-arrow-right {
-  animation: arrow-right 1s steps(15) infinite;
-  -moz-animation: arrow-right 1s steps(15) infinite;
-  -webkit-animation: arrow-right 1s steps(15) infinite;
-}
-
-@keyframes arrow-right {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-  transform: translateX(10px);
-  }
-  100% {
-  transform: translateX(0px);
-  }
+  animation: move-right 1s steps(15) infinite;
+  -moz-animation: move-right 1s steps(15) infinite;
+  -webkit-animation: move-right 1s steps(15) infinite;
 }
 
 /***** Comments styles *****/
@@ -598,9 +598,9 @@ a:visited {
 .searchform > button[type="submit"]:hover > i.fa-search, 
 .searchform > button[type="submit"]:active > i.fa-search, 
 .searchform > button[type="submit"]:focus > i.fa-search {
-  animation: arrow-right 1s steps(15) infinite;
-  -moz-animation: arrow-right 1s steps(15) infinite;
-  -webkit-animation: arrow-right 1s steps(15) infinite;
+  animation: move-right 1s steps(15) infinite;
+  -moz-animation: move-right 1s steps(15) infinite;
+  -webkit-animation: move-right 1s steps(15) infinite;
 }
 
 /***** Contact page styles *****/
@@ -621,9 +621,9 @@ a:visited {
 .nf-form-content input[type="button"]:active, 
 .nf-form-content input[type="button"]:focus {
   color: var(--color-light) !important;
-  animation: arrow-right 1s steps(15) infinite;
-  -moz-animation: arrow-right 1s steps(15) infinite;
-  -webkit-animation: arrow-right 1s steps(15) infinite;
+  animation: move-right 1s steps(15) infinite;
+  -moz-animation: move-right 1s steps(15) infinite;
+  -webkit-animation: move-right 1s steps(15) infinite;
 }
 
 /***** Not found page styles *****/
