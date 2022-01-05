@@ -90,6 +90,23 @@ a:visited {
   }
 }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 /***** Resets *****/
 
 .button-reset {
@@ -598,9 +615,9 @@ a:visited {
 .searchform > button[type="submit"]:hover > i.fa-search, 
 .searchform > button[type="submit"]:active > i.fa-search, 
 .searchform > button[type="submit"]:focus > i.fa-search {
-  animation: move-right 1s steps(15) infinite;
-  -moz-animation: move-right 1s steps(15) infinite;
-  -webkit-animation: move-right 1s steps(15) infinite;
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 /***** Contact page styles *****/
@@ -621,9 +638,9 @@ a:visited {
 .nf-form-content input[type="button"]:active, 
 .nf-form-content input[type="button"]:focus {
   color: var(--color-light) !important;
-  animation: move-right 1s steps(15) infinite;
-  -moz-animation: move-right 1s steps(15) infinite;
-  -webkit-animation: move-right 1s steps(15) infinite;
+  animation: bounce 1s;
+  -moz-animation: bounce 1s;
+  -webkit-animation: bounce 1s;
 }
 
 /***** Not found page styles *****/
