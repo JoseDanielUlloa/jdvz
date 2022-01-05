@@ -21,6 +21,7 @@
     </div>
 
     <!-- Previous & Next posts -->
+    <h4>Let's keep the habit of learning going:</h4>
     <nav id="posts-nav" class="posts-nav" aria-label="Posts navigation">
         <h2 id="prev-next-posts" class="sr-only">Posts navigation</h2>
         <ul aria-labelledby="prev-next-posts" class="list-reset">
