@@ -34,3 +34,20 @@ function jdvz_menus() {
     register_nav_menus($locations);
 }
 add_action('init', 'jdvz_menus');
+
+// Custom post types
+function create_custom_post_types() {
+    // Coming soon post type
+    register_post_type( 'coming_soon',
+        array(
+            'labels' => array(
+                'name' => __( 'Coming Soon' ),
+                'singular_name' => __( 'Coming Soon' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'coming-soon' ),
+        )
+    );
+}
+add_action( 'init', 'create_custom_post_types' );
