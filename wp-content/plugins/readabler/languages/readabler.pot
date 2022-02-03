@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Readabler
+# Copyright (C) 2022 Readabler
 # This file is distributed under the same license as the Readabler package.
 msgid ""
 msgstr ""
@@ -13,63 +13,63 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:173
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:177
 msgid " For full functionality of this site it is necessary to enable JavaScript."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:461
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:465
 msgid "Open Accessibility Panel"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:501
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:505
 msgid "Accessibility"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:502
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:506
 msgid "Close Accessibility Panel"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:520, wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:521
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:524, wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:525
 msgid "Reset Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:525
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:529
 msgid "Hide Accessibility Panel forever"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:526
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:530
 msgid "Hide Forever"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:575, wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:575, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1493, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1513
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:579, wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:579, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1493, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1513
 msgid "Accessibility Statement"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:640
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:644
 msgid "Close Accessibility Statement"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:687
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:691
 msgid "Voicer: Before you begin"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:688
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:692
 msgid "This plugin uses the Cloud Text-to-Speech API. You need to set up your Google Cloud Platform project and authorization before creating audio from text. Visit"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:690
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:694
 msgid "Online Documentation"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:690
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:694
 msgid "for more details."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:677
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:681
 msgid "This plugin uses the Google Cloud Text-to-Speech API Key File. Set up your Google Cloud Platform project before the start."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:719
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Caster.php:723
 msgid "Activate your copy of the Readabler to enable Accessibility Modes and additional features"
 msgstr ""
 
@@ -1966,18 +1966,26 @@ msgid "A group of settings to improve the compatibility of the plugin with other
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2473
-msgid "Late CSS and JS loading"
+msgid "Required JS and CSS"
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2474
-msgid "Enables later loading of styles and scripts. Use this option if some of the pages are missing Readable styles or scripts."
+msgid "Load only scripts and styles necessary for work with current settings."
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2480
-msgid "CopyScape Skip"
+msgid "Late CSS and JS loading"
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2481
+msgid "Enables later loading of styles and scripts. Use this option if some of the pages are missing Readable styles or scripts."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2487
+msgid "CopyScape Skip"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2488
 msgid "Ignore the markup of the plugin interface when parsing with the CopyScape"
 msgstr ""
 
@@ -2256,7 +2264,7 @@ msgstr ""
 msgid "Drag and drop or click on the form to replace API key. |"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/CheckCompatibility.php:215, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:315, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:528, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:534, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:532
+#: wp-content/plugins/readabler/src/Merkulove/Unity/CheckCompatibility.php:215, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:347, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:560, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:566, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:564
 msgid "Readabler"
 msgstr ""
 
@@ -2332,7 +2340,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:161
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/readabler/src/Merkulove/Unity/PluginHelper.php:141, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:164
 msgid "Documentation"
 msgstr ""
 
@@ -2345,14 +2353,22 @@ msgid "Rate this plugin:"
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:439
-msgid "Please visit the plugin page on the Envato market to "
+msgid "Your plugin license is "
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:441
-msgid "download "
+msgid "not activated"
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:443
+msgid "Please activate the license to receive automatic updates in one click, or visit the plugin page on the Envato market to "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:446
+msgid "download "
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/PluginUpdater.php:448
 msgid "the latest version."
 msgstr ""
 
@@ -2574,47 +2590,47 @@ msgstr ""
 msgid "Plugin settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:157
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:160
 msgid "Helpful links"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:167
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:170
 msgid "Get help"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:171
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:174
 msgid "Rate this plugin"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:177
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:180
 msgid "More plugins"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:270, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:294, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:314
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:302, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:326, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:346
 msgid "Readabler Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:271, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:295
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:303, wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:327
 msgid "Readabler for "
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:480
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:512
 msgid "Settings saved!"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:504
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:536
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:510
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:542
 msgid "Invalid purchase code."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:539
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:571
 msgid "v."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:545
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Settings.php:577
 msgid "Save changes"
 msgstr ""
 

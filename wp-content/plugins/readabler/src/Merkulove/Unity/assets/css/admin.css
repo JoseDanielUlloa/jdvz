@@ -4,8 +4,8 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.10
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @version         1.2.12
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
  * @support         help@merkulov.design
@@ -99,3 +99,24 @@
   margin-left: -210px;
   margin-top: 0;
   margin-bottom: 0; }
+
+.mdc-social {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  bottom: 16px;
+  min-width: 240px;
+  justify-content: space-between; }
+  .mdc-social .mdc-list-item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .mdc-social .mdc-list-item svg {
+      max-width: 16px;
+      margin: 0 3px; }
+      .mdc-social .mdc-list-item svg path {
+        fill: rgba(10, 33, 56, 0.6); }
+
+@media screen and (max-width: 620px) {
+  .mdc-social {
+    display: none; } }

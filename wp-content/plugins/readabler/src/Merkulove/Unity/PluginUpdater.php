@@ -5,8 +5,8 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.10
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @version         1.2.12
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
  * @support         help@merkulov.design
@@ -436,7 +436,12 @@ final class PluginUpdater {
 		/** Message for non activated users. */
 		if ( ! TabActivation::get_instance()->is_activated() ) {
 			echo '<br /><span class="mdp-line">&nbsp;</span>';
-			esc_attr_e( 'Please visit the plugin page on the Envato market to ', 'readabler' );
+            esc_attr_e( 'Your plugin license is ', 'readabler' );
+            echo '<strong style="color: #ff495c">';
+            esc_attr_e( 'not activated', 'readabler' );
+            echo '.</strong> ';
+            esc_attr_e( 'Please activate the license to receive automatic updates in one click, or visit the plugin page on the Envato market to ', 'readabler' );
+            echo ' <a href="https://1.envato.market/reviewer-elementor" target="_blank">';
 			echo ' <a href="https://1.envato.market/readabler" target="_blank">';
 			esc_attr_e( 'download ', 'readabler' );
 			echo '</a> ';

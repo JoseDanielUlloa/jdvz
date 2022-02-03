@@ -5,8 +5,8 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.10
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @version         1.2.12
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
  * @support         help@merkulov.design
@@ -147,7 +147,7 @@ final class Elementor {
 		if ( ! did_action( 'elementor/loaded' ) ) { return; }
 
 		/** Register custom widgets. */
-		add_action( 'elementor/widgets/widgets_registered', [$this, 'register_widgets'] );
+		add_action( 'elementor/widgets/widgets_registered', [$this, 'register_widgets'], 30 );
 
 	}
 

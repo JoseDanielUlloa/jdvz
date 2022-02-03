@@ -4,8 +4,8 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.10
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @version         1.2.12
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
  * @support         help@merkulov.design
@@ -3661,7 +3661,20 @@ let mdpReadabler = ( function() {
                 document.body.classList.remove( 'mdp-readabler-stop-animations' );
 
                 /** Play all videos. */
-                document.querySelectorAll('video').forEach(vid => vid.play());
+                document.querySelectorAll('video').forEach(vid => {
+
+                    if ( vid.paused === true ) {
+
+                        if ( vid.dataset.pausedByReadabler === 'true' ) {
+
+                            vid.play();
+                            vid.dataset.pausedByReadabler = 'false';
+
+                        }
+
+                    }
+
+                } );
 
                 return;
 
@@ -3702,8 +3715,44 @@ let mdpReadabler = ( function() {
 
             document.head.appendChild( actionStopAnimations.stopAnimationsStyle );
 
-            /** Pause all videos. */
-            document.querySelectorAll('video').forEach(vid => vid.pause());
+            /** Pause all videos from video tag. */
+            document.querySelectorAll( 'video' ).forEach( vid => {
+
+                // Pause video if it played now
+                if ( vid.paused === false ) {
+
+                    vid.pause();
+                    vid.dataset.pausedByReadabler = 'true';
+
+                }
+
+            } );
+
+            /** Stop all youtube videos */
+            document.querySelectorAll( 'iframe' ).forEach( iframe => {
+
+                if ( iframe.dataset.pausedByReadabler === 'undefined' ) {
+
+                    iframe.dataset.pausedByReadabler = 'true';
+
+                } else {
+
+                    setTimeout( function () {
+
+                        let iframeSrc = iframe.src;
+
+                        if ( iframeSrc.includes( 'www.youtube.com/embed' ) ){
+
+                            iframe.src = iframeSrc;
+                            iframe.dataset.pausedByReadabler = 'true';
+
+                        }
+
+                    }, 300 );
+
+                }
+
+            } );
 
         }
 
@@ -4465,6 +4514,18 @@ let mdpReadabler = ( function() {
      * Add Readabler events.
      **/
     function __construct( wpOptions ) {
+
+        /** Stop and remove markup if mdp-readabler-hide cookie is found */
+        if ( window.document.cookie.indexOf( 'mdp-readabler-hide=1' ) > -1 ) {
+
+            const toHidePopup = document.querySelector( '#mdp-readabler-popup-box' );
+            const toHideButton = document.querySelector( '#mdp-readabler-trigger-button' );
+
+            if ( toHidePopup ) { toHidePopup.remove(); }
+            if ( toHideButton ) { toHideButton.remove(); }
+
+            return;
+        }
 
         /** Readabler plugin settings. */
         options = wpOptions;

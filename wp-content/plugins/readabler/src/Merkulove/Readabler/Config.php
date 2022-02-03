@@ -5,8 +5,8 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.10
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @version         1.2.12
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
  * @support         help@merkulov.design
@@ -2466,6 +2466,13 @@ final class Config {
 			'label'             => esc_html__( 'WordPress Themes & Plugins compatibility', 'readabler' ),
 			'description'       => esc_html__( 'A group of settings to improve the compatibility of the plugin with other plugins or themes.', 'readabler' ),
 			'default'           => ''
+		];
+
+		$tabs['general']['fields']['assets_condition'] = [
+			'type'              => 'switcher',
+			'label'             => esc_html__( 'Required JS and CSS', 'readabler' ),
+			'description'       => esc_html__( 'Load only scripts and styles necessary for work with current settings.', 'readabler' ),
+			'default'           => 'on',
 		];
 
 		$tabs['general']['fields']['late_load'] = [

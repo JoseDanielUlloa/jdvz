@@ -5,8 +5,8 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.10
- * @copyright       (C) 2018 - 2021 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @version         1.2.12
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
  * @support         help@merkulov.design
@@ -131,7 +131,11 @@ final class Caster {
 	    /** User disable Accessibility If we have this cookie. */
 	    elseif ( isset( $_COOKIE[ 'mdp-readabler-hide' ] ) &&  '1' === $_COOKIE[ 'mdp-readabler-hide' ] ) {
 
-		    return;
+            if ( Settings::get_instance()->options[ 'assets_condition' ] === 'on' ) {
+
+	            return;
+
+            }
 
 	    }
 
