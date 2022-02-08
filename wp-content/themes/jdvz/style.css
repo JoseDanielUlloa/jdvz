@@ -46,14 +46,7 @@ body {
   grid-template-columns: repeat(16, 1fr);
 }
 
-a {
-  color: var(--color-gray-dark);
-  text-decoration: none;
-}
-
-a:visited {
-  color: initial;
-}
+/***** Accessibility *****/
 
 .sr-only {
   position: absolute;
@@ -64,6 +57,17 @@ a:visited {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+/***** Links & Buttons *****/
+
+a {
+  color: var(--color-gray-dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
 }
 
 .blue-button {
@@ -90,6 +94,29 @@ a:visited {
   -moz-animation: bounce 1s;
   -webkit-animation: bounce 1s;
 }
+
+/***** Resets *****/
+
+.button-reset {
+  display: inline-block;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.input-reset {
+  border: none;
+}
+
+/***** Animations *****/
 
 @keyframes move-left {
   0% {
@@ -130,27 +157,6 @@ a:visited {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-}
-
-/***** Resets *****/
-
-.button-reset {
-  display: inline-block;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.input-reset {
-  border: none;
 }
 
 /***** Header & Footer *****/
