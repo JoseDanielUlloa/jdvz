@@ -14,7 +14,7 @@ function jdvz_register_styles() {
     wp_enqueue_style('jdvz-stlye', get_template_directory_uri() . "/style.css", array('jdvz-normalize'), $version, 'all');
     wp_enqueue_style('jdvz-normalize', get_template_directory_uri() . "/assets/css/normalize.css", array(), '8.0.1', 'all');
     wp_enqueue_style('jdvz-google-fonts','https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-    wp_enqueue_style('jdvz-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css", array(), '6.0.0', 'all');
+    wp_enqueue_style('jdvz-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css", array(), '6.0.0', 'all');
 }
 add_action( 'wp_enqueue_scripts', 'jdvz_register_styles');
 
