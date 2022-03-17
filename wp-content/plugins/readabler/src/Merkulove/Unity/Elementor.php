@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -147,7 +147,7 @@ final class Elementor {
 		if ( ! did_action( 'elementor/loaded' ) ) { return; }
 
 		/** Register custom widgets. */
-		add_action( 'elementor/widgets/widgets_registered', [$this, 'register_widgets'], 30 );
+        add_action( 'elementor/widgets/register', [ $this, 'register_widgets' ], 16 );
 
 	}
 
@@ -168,7 +168,6 @@ final class Elementor {
 
 			if ( substr( $filename, -4 ) === '.php' ) {
 
-				/** @noinspection PhpIncludeInspection */
 				require_once $filename;
 
 				/** Prepare class name from file. */
@@ -179,14 +178,14 @@ final class Elementor {
                 $widget_class = 'Merkulove\Readabler\\' . $widget_class;
 
                 /** Instantiate widget and register it in Elementor. */
-                \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new $widget_class() );
+                \Elementor\Plugin::instance()->widgets_manager->register( new $widget_class() );
 
 			}
 
 		}
 
         /** Sort our widgets inside Category. */
-        $this->sort_widgets();
+        //$this->sort_widgets();
 
 	}
 
@@ -218,14 +217,13 @@ final class Elementor {
             if ( 'Elementor\Widget_WordPress' === $widget_class ) { continue; }
 
             /** Get widget order. */
-            /** @noinspection PhpPossiblePolymorphicInvocationInspection */
             $order = property_exists( $widget_type, 'mdp_order' ) ? $widget_type->mdp_order : 0;
 
             /** Remember class and order. */
             $new_order[$widget_class] = $order;
 
             /** Unregister all widgets. */
-            $widgets_manager->unregister_widget_type( $key );
+            $widgets_manager->unregister( $key );
 
         }
 
@@ -234,7 +232,7 @@ final class Elementor {
 
         /** Instantiate widgets in correct order. */
         foreach ( $new_order as $class => $o ) {
-            $widgets_manager->register_widget_type( new $class );
+            $widgets_manager->register( new $class );
         }
 
     }

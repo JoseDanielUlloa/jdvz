@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -78,6 +78,7 @@ final class AdminScripts {
         /** Prepare values to pass to JS. */
         $to_js = [
             'ajaxURL'   => admin_url('admin-ajax.php'),
+            'restBase'  => get_rest_url(),
             'nonce'     => wp_create_nonce( 'readabler' ), // Nonce for security.
         ];
 

@@ -1,29 +1,33 @@
 @charset "UTF-8";
 /**
- * Readabler
- * Web accessibility for Your WordPress site.
- * Exclusively on https://1.envato.market/readabler
- *
- * @encoding        UTF-8
- * @version         1.2.12
- * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
- * @license         Envato License https://1.envato.market/KYbje
- * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
- * @support         help@merkulov.design
- **/
+ * * Readabler
+ * * Web accessibility for Your WordPress site.
+ * * Exclusively on https://1.envato.market/readabler
+ * *
+ * * @encoding        UTF-8
+ * * @version         1.2.13
+ * * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * * @license         Envato License https://1.envato.market/KYbje
+ * * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
+ * * @support         help@merkulov.design
+ * **/
 .mdp-description img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 .mdc-changelog > h3:first-child {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 h3 + .fyi-description {
-  display: none; }
+  display: none;
+}
 
 .counter-label a {
   pointer-events: none;
   text-decoration: none;
-  color: #666; }
+  color: #666;
+}
 
 h6 {
   display: inline-block;
@@ -34,7 +38,8 @@ h6 {
   height: 2em;
   font-size: 0.69em !important;
   line-height: 2em !important;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 pre {
   background-color: whitesmoke;
@@ -47,4 +52,5 @@ pre {
   overflow: visible;
   overflow-y: hidden;
   padding: 0 0 0 4px !important;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}

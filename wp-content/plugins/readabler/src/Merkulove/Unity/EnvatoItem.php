@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -127,9 +127,8 @@ final class EnvatoItem {
 	 **/
 	private function prepare_url() {
 
-		/** Build URL. */
-		$url = 'https://merkulove.host/wp-content/plugins/mdp-purchase-validator/src/Merkulove/PurchaseValidator/GetMyId.php';
-		$url .= '?plugin_name=' . urlencode( Plugin::get_name() );
+        $url = 'https://merkulove.host/wp-json/mdp/v2/get_id';
+		$url .= '?name=' . urlencode( Plugin::get_name() );
 
 		return $url;
 

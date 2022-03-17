@@ -1,27 +1,30 @@
 /**
- * Readabler
- * Web accessibility for Your WordPress site.
- * Exclusively on https://1.envato.market/readabler
- *
- * @encoding        UTF-8
- * @version         1.2.12
- * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
- * @license         Envato License https://1.envato.market/KYbje
- * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
- * @support         help@merkulov.design
- **/
+ * * Readabler
+ * * Web accessibility for Your WordPress site.
+ * * Exclusively on https://1.envato.market/readabler
+ * *
+ * * @encoding        UTF-8
+ * * @version         1.2.13
+ * * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * * @license         Envato License https://1.envato.market/KYbje
+ * * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
+ * * @support         help@merkulov.design
+ * **/
 .icon .mdp-readabler-widget-icon {
   width: 100%;
   height: 29px;
-  display: block; }
+  display: block;
+}
 
 .elementor-navigator__element__element-type .mdp-readabler-widget-icon {
   width: 12px;
-  height: 12px; }
+  height: 12px;
+}
 
 .icon .mdp-readabler-widget-icon,
 .elementor-navigator__element__element-type .mdp-readabler-widget-icon {
   background-image: url("../../../../../images/logo-color.svg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+}

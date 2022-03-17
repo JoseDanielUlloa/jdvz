@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -119,6 +119,9 @@ final class Unity {
 
     	/** Load the plugin text domain for translation. */
         PluginHelper::load_textdomain();
+
+        /** Register rest calls */
+        Rest::get_instance();
 
     }
 

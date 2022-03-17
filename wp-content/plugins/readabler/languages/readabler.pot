@@ -81,7 +81,7 @@ msgstr ""
 msgid "Design Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:167, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2146, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:374
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:167, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2146, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:398
 msgid "Highlight Titles"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "Offset:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:253, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2155, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:390
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:253, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2155, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:414
 msgid "Highlight Links"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgstr ""
 msgid "Select highlight links color."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:336, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2164, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:331
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:336, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2164, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:355
 msgid "Text Magnifier"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Font size:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:394, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2375, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:659
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:394, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2375, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:717
 msgid "Reading Guide"
 msgstr ""
 
@@ -241,7 +241,7 @@ msgstr ""
 msgid "Arrow size:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:527, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2402, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:696
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:527, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2402, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:754
 msgid "Reading Mask"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Select overlay color for reading mask."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:573, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2411, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:707
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:573, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2411, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:765
 msgid "Highlight Hover"
 msgstr ""
 
@@ -269,7 +269,7 @@ msgstr ""
 msgid "Select highlight hover color."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:656, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2420, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:717
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:656, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2420, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:775
 msgid "Highlight Focus"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgstr ""
 msgid "Select highlight focus color."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:742, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2366, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:648
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:742, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2366, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:706
 msgid "Virtual Keyboard"
 msgstr ""
 
@@ -1029,7 +1029,7 @@ msgstr ""
 msgid "Graphics Navigation Hot Key"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1736, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2447, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:759
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1736, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2447, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:817
 msgid "Text to Speech"
 msgstr ""
 
@@ -1161,7 +1161,7 @@ msgstr ""
 msgid " to join multiple combinations: "
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1925, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:816
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1925, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:886
 msgid "Accessibility modes"
 msgstr ""
 
@@ -1185,7 +1185,7 @@ msgstr ""
 msgid "Epilepsy Safe Mode:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1942, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:826
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1942, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:896
 msgid "Epilepsy Safe Mode"
 msgstr ""
 
@@ -1197,11 +1197,11 @@ msgstr ""
 msgid "Visually Impaired Mode:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1951, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:838
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1951, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:908
 msgid "Visually Impaired Mode"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1952, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:840
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1952, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:910
 msgid "This mode adjusts the website for the convenience of users with visual impairments such as Degrading Eyesight, Tunnel Vision, Cataract, Glaucoma, and others."
 msgstr ""
 
@@ -1209,11 +1209,11 @@ msgstr ""
 msgid "Cognitive Disability Mode:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1960, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:850
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1960, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:920
 msgid "Cognitive Disability Mode"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1961, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:852
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1961, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:922
 msgid "This mode provides different assistive options to help users with cognitive impairments such as Dyslexia, Autism, CVA, and others, to focus on the essential elements of the website more easily."
 msgstr ""
 
@@ -1221,11 +1221,11 @@ msgstr ""
 msgid "ADHD Friendly Mode:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1969, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:862
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1969, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:932
 msgid "ADHD Friendly Mode"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1970, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:864
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1970, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:934
 msgid "This mode helps users with ADHD and Neurodevelopmental disorders to read, browse, and focus on the main website elements more easily while significantly reducing distractions."
 msgstr ""
 
@@ -1233,7 +1233,7 @@ msgstr ""
 msgid "Blindness Mode:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1978, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:874
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1978, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:944
 msgid "Blindness Mode"
 msgstr ""
 
@@ -1241,7 +1241,7 @@ msgstr ""
 msgid "This mode configures the website to be compatible with screen-readers such as JAWS, NVDA, VoiceOver, and TalkBack. A screen-reader is software for blind users that is installed on a  computer and smartphone, and websites must be compatible with it."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1991, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2008, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:270
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:1991, wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2008, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:275
 msgid "Online Dictionary"
 msgstr ""
 
@@ -1557,7 +1557,7 @@ msgstr ""
 msgid "한국어"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2102, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:309
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2102, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:333
 msgid "Readable Experience"
 msgstr ""
 
@@ -1569,7 +1569,7 @@ msgstr ""
 msgid "Content Scaling:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2119, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:319
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2119, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:343
 msgid "Content Scaling"
 msgstr ""
 
@@ -1581,7 +1581,7 @@ msgstr ""
 msgid "Readable Font:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2128, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:348
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2128, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:372
 msgid "Readable Font"
 msgstr ""
 
@@ -1593,7 +1593,7 @@ msgstr ""
 msgid "Dyslexia Friendly:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2137, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:359
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2137, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:383
 msgid "Dyslexia Friendly"
 msgstr ""
 
@@ -1629,7 +1629,7 @@ msgstr ""
 msgid "Font Sizing:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2173, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:401
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2173, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:425
 msgid "Font Sizing"
 msgstr ""
 
@@ -1641,7 +1641,7 @@ msgstr ""
 msgid "Line Height:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2182, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:413, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:414
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2182, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:437, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:438
 msgid "Line Height"
 msgstr ""
 
@@ -1653,7 +1653,7 @@ msgstr ""
 msgid "Letter Spacing:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2191, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:425
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2191, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:449
 msgid "Letter Spacing"
 msgstr ""
 
@@ -1697,7 +1697,7 @@ msgstr ""
 msgid "The option aligns the website content to the right."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2230, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:481
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2230, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:520
 msgid "Visually Pleasing Experience"
 msgstr ""
 
@@ -1713,7 +1713,7 @@ msgstr ""
 msgid "Dark Contrast:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2247, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:491
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2247, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:530
 msgid "Dark Contrast"
 msgstr ""
 
@@ -1725,7 +1725,7 @@ msgstr ""
 msgid "Light Contrast:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2256, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:501
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2256, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:540
 msgid "Light Contrast"
 msgstr ""
 
@@ -1737,7 +1737,7 @@ msgstr ""
 msgid "Monochrome:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2265, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:511
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2265, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:550
 msgid "Monochrome"
 msgstr ""
 
@@ -1749,7 +1749,7 @@ msgstr ""
 msgid "High Saturation:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2274, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:537
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2274, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:576
 msgid "High Saturation"
 msgstr ""
 
@@ -1761,7 +1761,7 @@ msgstr ""
 msgid "High Contrast:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2283, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:521
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2283, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:560
 msgid "High Contrast"
 msgstr ""
 
@@ -1773,7 +1773,7 @@ msgstr ""
 msgid "Low Saturation:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2292, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:553
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2292, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:592
 msgid "Low Saturation"
 msgstr ""
 
@@ -1817,7 +1817,7 @@ msgstr ""
 msgid "The option displays a color picker to adjust the background color of website content."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2331, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:611
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2331, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:669
 msgid "Easy Orientation"
 msgstr ""
 
@@ -1829,7 +1829,7 @@ msgstr ""
 msgid "Mute Sounds:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2348, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:621
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2348, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:679
 msgid "Mute Sounds"
 msgstr ""
 
@@ -1841,7 +1841,7 @@ msgstr ""
 msgid "Hide Images:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2357, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:631
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2357, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:689
 msgid "Hide Images"
 msgstr ""
 
@@ -1881,7 +1881,7 @@ msgstr ""
 msgid "Stop Animations:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2393, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:678
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2393, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:736
 msgid "Stop Animations"
 msgstr ""
 
@@ -1917,7 +1917,7 @@ msgstr ""
 msgid "Big Dark Cursor:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2429, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:727
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2429, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:785
 msgid "Big Dark Cursor"
 msgstr ""
 
@@ -1929,7 +1929,7 @@ msgstr ""
 msgid "Big Light Cursor:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2438, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:737
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Config.php:2438, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:795
 msgid "Big Light Cursor"
 msgstr ""
 
@@ -2069,87 +2069,87 @@ msgstr ""
 msgid "Change Color to "
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:280, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:281
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:285, wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:286
 msgid "Search the online dictionary..."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:282
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:287
 msgid "Start typing to search in Wikipedia"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:284
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:289
 msgid "Clear search results"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:320
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:344
 msgid "Content Size"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:402
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:426
 msgid "Font Size"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:426
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:450
 msgid "Letter Space"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:437
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:461
 msgid "Left Aligned"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:447
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:471
 msgid "Center Aligned"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:457
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:481
 msgid "Right Aligned"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:564
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:603
 msgid "Adjust Text Colors"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:574
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:613
 msgid "Adjust Title Colors"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:584
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:623
 msgid "Adjust Background Colors"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:780
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:838
 msgid "Navigation Keys"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:791
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:849
 msgid "Link navigator"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:827
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:897
 msgid "Dampens color and removes blinks"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:828
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:898
 msgid "This mode enables people with epilepsy to use the website safely by eliminating the risk of seizures that result from flashing or blinking animations and risky color combinations."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:839
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:909
 msgid "Improves website's visuals"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:851
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:921
 msgid "Helps to focus on specific content"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:863
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:933
 msgid "Reduces distractions and improve focus"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:875
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:945
 msgid "Allows using the site with your screen-reader"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:876
+#: wp-content/plugins/readabler/src/Merkulove/Readabler/Controls.php:946
 msgid "This mode configures the website to be compatible with screen-readers such as JAWS, NVDA, VoiceOver, and TalkBack. A screen-reader is software for blind users that is installed on a computer and smartphone, and websites must be compatible with it."
 msgstr ""
 

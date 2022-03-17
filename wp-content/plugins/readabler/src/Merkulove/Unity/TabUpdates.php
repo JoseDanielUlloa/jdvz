@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -56,7 +56,7 @@ final class TabUpdates extends Tab {
     private function __construct() {
 
         /** Reset Settings. */
-        add_action( 'wp_ajax_check_updates', [ __CLASS__, 'ajax_check_updates' ] );
+        add_action( 'wp_ajax_check_updates_readabler', [ __CLASS__, 'ajax_check_updates' ] );
 
     }
 

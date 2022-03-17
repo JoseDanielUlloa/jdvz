@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -263,8 +263,13 @@ final class Controls {
         /** Short hand for plugin settings. */
         $options = Settings::get_instance()->options;
 
-        /** Process only if we have at least one control from Readable Experience group. */
-        if ( 'on' !== $options['online_dictionary'] ) { return; }
+		/** Don't render section if no one section */
+		if ( ! in_array( 'on' , [
+			$options[ 'online_dictionary_heading' ],
+			$options[ 'online_dictionary' ]
+		] ) ) {
+			return;
+		}
 
         ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['online_dictionary_heading'] ) { ?>
             <h4><?php esc_html_e( 'Online Dictionary', 'readabler' ); ?></h4>
@@ -302,8 +307,27 @@ final class Controls {
 		/** Process only if we have at least one control from Readable Experience group. */
 		if ( ! $this->is_readable_experience() ) { return; }
 
-		/** Short hand for plugin settings. */
+		/** Shorthand for plugin settings. */
 		$options = Settings::get_instance()->options;
+
+        /** Don't render section if no one section */
+        if ( ! in_array( 'on' , [
+	        $options[ 'readable_experience_heading' ],
+	        $options[ 'content_scaling' ],
+	        $options[ 'readable_font' ],
+	        $options[ 'dyslexia_font' ],
+	        $options[ 'highlight_titles' ],
+	        $options[ 'highlight_links' ],
+	        $options[ 'text_magnifier' ],
+	        $options[ 'font_sizing' ],
+	        $options[ 'line_height' ],
+	        $options[ 'letter_spacing' ],
+	        $options[ 'align_left' ],
+	        $options[ 'align_center' ],
+	        $options[ 'align_right']
+        ] ) ) {
+            return;
+        }
 
         ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['readable_experience_heading'] ) { ?>
             <h4><?php esc_html_e( 'Readable Experience', 'readabler' ); ?></h4>
@@ -474,8 +498,23 @@ final class Controls {
 	    /** Process only if we have at least one control from Visually Pleasing Experience group. */
 	    if ( ! $this->is_visually_pleasing_experience() ) { return; }
 
-	    /** Short hand for plugin settings. */
+	    /** Shorthand for plugin settings. */
 		$options = Settings::get_instance()->options;
+
+	    /** Don't render section if no one section */
+	    if ( ! in_array( 'on' , [
+		    $options[ 'dark_contrast' ],
+		    $options[ 'light_contrast' ],
+		    $options[ 'monochrome' ],
+		    $options[ 'high_saturation' ],
+		    $options[ 'high_contrast' ],
+		    $options[ 'low_saturation' ],
+		    $options[ 'text_colors' ],
+		    $options[ 'title_colors' ],
+		    $options[ 'background_colors' ]
+	    ] ) ) {
+		    return;
+	    }
 
         ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['visually_pleasing_heading'] ) { ?>
             <h4><?php esc_html_e( 'Visually Pleasing Experience', 'readabler' ); ?></h4>
@@ -606,6 +645,25 @@ final class Controls {
 
 	    /** Short hand for plugin settings. */
 		$options = Settings::get_instance()->options;
+
+	    /** Don't render section if no one section */
+	    if ( ! in_array( 'on' , [
+		    $options[ 'mute_sounds' ],
+		    $options[ 'hide_images' ],
+		    $options[ 'virtual_keyboard' ],
+		    $options[ 'reading_guide' ],
+		    $options[ 'useful_links' ],
+		    $options[ 'stop_animations' ],
+		    $options[ 'reading_mask' ],
+		    $options[ 'highlight_hover' ],
+		    $options[ 'highlight_focus' ],
+		    $options[ 'big_black_cursor' ],
+		    $options[ 'big_white_cursor' ],
+		    $options[ 'text_to_speech' ],
+		    $options[ 'keyboard_navigation' ],
+	    ] ) ) {
+		    return;
+	    }
 
         ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['easy_orientation_heading'] ) { ?>
             <h4><?php esc_html_e( 'Easy Orientation', 'readabler' ); ?></h4>
@@ -811,6 +869,18 @@ final class Controls {
 
 	    /** Short hand for plugin settings. */
 	    $options = Settings::get_instance()->options;
+
+		/** Don't render section if no one section */
+		if ( ! in_array( 'on' , [
+			$options[ 'accessibility_profiles_heading' ],
+			$options[ 'profile_epilepsy' ],
+			$options[ 'profile_visually_impaired' ],
+			$options[ 'profile_cognitive_disability' ],
+			$options[ 'profile_adhd_friendly' ],
+			$options[ 'profile_blind_users' ]
+		] ) ) {
+			return;
+		}
 
 		?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['accessibility_profiles_heading'] ) { ?>
             <h4><?php esc_html_e( 'Accessibility modes', 'readabler' ); ?></h4>

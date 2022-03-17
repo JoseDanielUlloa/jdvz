@@ -4,7 +4,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.12
+ * @version         1.2.13
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -37,7 +37,6 @@
 
             let $mail = $('#mdp-subscribe-mail');
             let $name = $('#mdp-subscribe-name');
-            let plugin = 'readabler';
             let mailIndex = $mail.parent().data('mdc-index');
 
             if ( $mail.val().length > 0 && window.MerkulovMaterial[mailIndex].valid) {
@@ -49,14 +48,15 @@
 
                 $.ajax({
                     type: "GET",
-                    url: "https://merkulove.host/wp-content/plugins/mdp-purchase-validator/esputnik/subscribe.php",
+                    url: `${ mdpReadabler.restBase }readabler/v2/subscribe`,
                     crossDomain: true,
-                    data: 'name=' + $name.val() + '&mail=' + $mail.val() + '&plugin=' + plugin,
+                    data: `name=${ $name.val() }&mail=${ $mail.val() }`,
                     success: function (data) {
 
-                        if (true === data) {
+                        data = JSON.parse( data );
 
-                            noticeArea.style.display = 'block';
+                        if ( data.status ) {
+
                             noticeArea.classList.add( 'mdp-subscribe-form-message-success' );
                             noticeArea.innerHTML = noticeArea.dataset.success;
 
@@ -64,13 +64,13 @@
 
                         } else {
 
-                            noticeArea.style.display = 'block';
                             noticeArea.classList.add( 'mdp-subscribe-form-message-error' );
                             noticeArea.innerHTML = noticeArea.dataset.error;
 
-                            setTimeout( function () { noticeArea.style.display = 'none' }, 7500 );
-
                         }
+
+                        noticeArea.style.display = 'block';
+                        setTimeout( function () { noticeArea.style.display = 'none' }, 7500 );
 
                     },
                     error: function (err) {
@@ -105,7 +105,7 @@
 
             /** Prepare data for AJAX request. */
             let data = {
-                action: 'check_updates',
+                action: 'check_updates_readabler',
                 nonce: mdpReadabler.nonce,
                 checkUpdates: true
             };
