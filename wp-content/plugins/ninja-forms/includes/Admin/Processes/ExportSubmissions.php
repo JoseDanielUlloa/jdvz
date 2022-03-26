@@ -157,6 +157,21 @@ class NF_Admin_Processes_ExportSubmissions extends NF_Abstracts_BatchProcess
 
     }
 
+    /** 
+     * Delete temp file before calling parent method
+     * @inheritDoc 
+     */
+    public function batch_complete( ): void
+    {
+        try {
+            unlink($this->file_path);
+        }catch(\Throwable $e){
+            //fail silently - no need to add second error after add_error() has been called
+        }
+
+        parent::batch_complete();
+    }
+
     public function writeBatch( ): void
     {
         if (!$file = fopen($this->file_path, 'a')) {
@@ -235,7 +250,7 @@ class NF_Admin_Processes_ExportSubmissions extends NF_Abstracts_BatchProcess
      */
     protected function constructFilepath()
     {
-        $filename = 'form-' . $this->form . '-all-subs';
+        $filename = time() . base64_encode( 'form-' . $this->form . '-all-subs' );
         $upload_dir = wp_upload_dir();
         $file_path = trailingslashit($upload_dir['path']) . $filename . '.' . $this->format;
 

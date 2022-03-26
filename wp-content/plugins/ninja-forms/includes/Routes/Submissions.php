@@ -56,12 +56,32 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
             'args' => [
                 'singleSubmission' => [
                     'required' => true,
-                    'description' => esc_attr__('Update Submission', 'ninja-forms'),
+                    'description' => esc_attr__('Update single Submission', 'ninja-forms'),
                     'type' => 'JSON encoded array',
                     'validate_callback' => 'rest_validate_request_arg',
                 ]
             ],
             'callback' => [ $this, 'update_submission' ],
+            'permission_callback' => [ $this, 'update_submission_permission_callback' ]
+        ));
+
+        register_rest_route('ninja-forms-submissions', 'submissions/restore', array(
+            'methods' => 'POST',
+            'args' => [
+                'restore' => [
+                    'required' => true,
+                    'description' => esc_attr__('Update Submission', 'ninja-forms'),
+                    'type' => 'boolean',
+                    'validate_callback' => 'rest_validate_request_arg',
+                ],
+                'submissions' => [
+                    'required' => true,
+                    'description' => esc_attr__('Array of Submissions', 'ninja-forms'),
+                    'type' => 'array',
+                    'validate_callback' => 'rest_validate_request_arg',
+                ]
+            ],
+            'callback' => [ $this, 'restore_submissions' ],
             'permission_callback' => [ $this, 'update_submission_permission_callback' ]
         ));
 
@@ -532,6 +552,7 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
             // to ensure it goes beyond all time zones
             $end_date = $_GET["end_date"] != 0 ? $_GET["end_date"] : time()+(60*60*24);
             $search_term = !empty($_GET["search_term"]) ? $_GET["search_term"] : null;
+            $status = !empty($_GET["status"]) && $_GET["status"] === "trash" ? ["trash"] : ['active', 'publish'];
         }
 
         //Get aggregated submissions
@@ -543,7 +564,7 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
         if($search_term){
             $params->setSearchString( $search_term );
         }
-        $params->setStatus( ['active', 'publish'] );
+        $params->setStatus( $status );
         $submissionAggregate = (new SubmissionAggregateFactory())->submissionAggregate();
         $filteredSubmissions = $submissionAggregate->filterSubmissions( $params );
         
@@ -651,6 +672,35 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
     }
 
     /**
+     * Request restoration of a collection of submissions
+     *
+     * Data passes as a collection of single submission entities keyed
+     * under submissions
+     * 
+     * {"submissions": SingleSubmission[]}
+     *
+     * @param WP_REST_Request $request
+     * @return void
+     */
+    public function restore_submissions(WP_REST_Request $request){
+        //Extract required data
+        $data = json_decode($request->get_body());  
+        
+        $submissions = $data->submissions;
+        
+        $submissionAggregate = (new SubmissionAggregateFactory())->submissionAggregate();
+        
+        foreach($submissions as $obj){
+            
+            $singleSubmission = SingleSubmission::fromArray((array)$obj);
+            
+            $submissionAggregate->restoreSingleSubmission($singleSubmission);
+        }
+
+        return 'ok';
+    }
+
+    /**
      * Request update of a single submission
      *
      * Data passes as a single submission entity keyed under submission
@@ -667,7 +717,7 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
         $singleSubmissionArray = $data['singleSubmission'];
 
         $singleSubmission = SingleSubmission::fromArray($singleSubmissionArray);
- 
+
         $submissionAggregate = (new SubmissionAggregateFactory())->submissionAggregate();
                     
         $submissionAggregate->updateSingleSubmission($singleSubmission);
