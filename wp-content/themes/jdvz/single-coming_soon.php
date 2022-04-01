@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="default-page">
-    <div id="main-content" role="main">
+    <main id="main-content">
         <?php while ( have_posts() ) : the_post();
             $category = get_field('category');
             $already_published = get_field('already_published');
@@ -51,7 +51,7 @@
             <?php comments_template(); ?>
 
         <?php endwhile; ?>
-    </div>
+    </main>
 </div>
 
 <?php get_footer(); ?>

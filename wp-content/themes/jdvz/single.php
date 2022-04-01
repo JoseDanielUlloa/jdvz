@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="default-page">
-    <div id="main-content" role="main">
+    <main id="main-content">
         <?php
             if( have_posts() ) {
                 while( have_posts() ) {
@@ -10,7 +10,7 @@
                 }
             }
         ?>
-    </div>
+    </main>
 </div>
 
 <?php get_footer(); ?>

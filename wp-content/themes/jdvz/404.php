@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
     <!-- Page not found details -->
-    <div id="main-content" class="default-page not-found-text">
+    <main id="main-content" class="default-page not-found-text">
         <h1>Page not found ...</h1>
         <h2>Either the link is broken or the page no longer exists.</h2>
         <h3>Please use the navigation above or search here:</h3>
         <?php get_search_form(); ?>
-    </div>
+    </main>
 
     <!-- Noise effect -->
     <section class="not-found-effect">
