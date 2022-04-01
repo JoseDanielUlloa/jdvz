@@ -163,12 +163,6 @@ class NF_Admin_Processes_ExportSubmissions extends NF_Abstracts_BatchProcess
      */
     public function batch_complete( ): void
     {
-        try {
-            unlink($this->file_path);
-        }catch(\Throwable $e){
-            //fail silently - no need to add second error after add_error() has been called
-        }
-
         parent::batch_complete();
     }
 
@@ -286,5 +280,13 @@ class NF_Admin_Processes_ExportSubmissions extends NF_Abstracts_BatchProcess
     public function getFileUrl(): string
     {
         return $this->fileUrl;
+    }
+
+    /**
+     * Get filepath of downloaded file in default directory
+     */
+    public function getFilePath(): string
+    {
+        return $this->file_path;
     }
 }

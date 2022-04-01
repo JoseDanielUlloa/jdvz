@@ -1,5 +1,6 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 
+use NinjaForms\Includes\Admin\Processes\DeleteBatchFile;
 use NinjaForms\Includes\Contracts\SubmissionHandler;
 use NinjaForms\Includes\Entities\SubmissionFilter;
 use NinjaForms\Includes\Entities\SingleSubmission;
@@ -154,6 +155,24 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
                 ],           
             ],
             'callback' => [ $this, 'download_all_submissions' ],
+            'permission_callback' => [ $this, 'get_submissions_permission_callback' ],
+        ));
+
+        /**
+         * Delete the temp file created from the `download-all` request
+         */
+        register_rest_route('ninja-forms-submissions', 'delete-download-file', array(
+            'methods' => 'POST',
+            'args' => [
+                'file_path' => [
+                    'required' => true,
+                    'description' => esc_attr__('File path of the file to delete', 'ninja-forms'),
+                    'type' => 'string',
+                    'validate_callback' => 'rest_validate_request_arg',
+                ],           
+            ],
+            'callback' => [ $this, 'delete_download_file' ],
+            // Uses the same permissions as the `download-all` request
             'permission_callback' => [ $this, 'get_submissions_permission_callback' ],
         ));
 
@@ -447,14 +466,46 @@ final class NF_Routes_Submissions extends NF_Abstracts_Routes
 
         $export = (new NF_Admin_Processes_ExportSubmissions($formId));
         $downloadUrl = $export->getFileUrl();
-
+        $filePath = $export->getFilePath();
         $response =[
             'formId'=>$formId,
-            'downloadUrl'=>$downloadUrl
+            'downloadUrl'=>$downloadUrl,
+            'filePath'=>$filePath
         ];
         
         return $response;
     }
+
+
+    /**
+     * Delete a file when provided valid file path
+     *
+     * @param WP_REST_Request $request Object with `file_path` property
+     * @return void
+     */
+    public function delete_download_file(WP_REST_Request $request)
+    {
+        //Gather data from the request
+        $data = json_decode($request->get_body());
+
+        if(!empty($data->file_path)){
+            
+            $filePath = (string)$data->file_path;
+
+            $deleteFile = (new DeleteBatchFile())->delete($filePath);
+            
+            $response=[
+                'result'=>$deleteFile
+            ];
+
+            return $response;
+
+        }else{
+            return new WP_Error('malformed_request', __('This request is missing data for method delete_download_file', 'ninja-forms'));
+        }
+
+    }
+
 
     /**
      * Trigger Email Action endpoint callback
