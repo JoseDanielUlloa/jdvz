@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -74,6 +74,11 @@ final class AdminScripts {
 		if ( ! in_array( $screen->base, Plugin::get_menu_bases(), true ) ) { return; }
 
         wp_enqueue_script( 'mdp-readabler-ui', Plugin::get_url() . 'src/Merkulove/Unity/assets/js/merkulov-ui' . Plugin::get_suffix() . '.js', [], Plugin::get_version(), true );
+
+        /** Add tab related scripts */
+        if ( isset( $_GET[ 'tab' ] ) && $_GET[ 'tab' ] === 'migration' ) {
+            wp_enqueue_script( 'mdp-readabler-unity-migration-tab', Plugin::get_url() . 'src/Merkulove/Unity/assets/js/migration' . Plugin::get_suffix() . '.js', [], Plugin::get_version(), true );
+        }
 
         /** Prepare values to pass to JS. */
         $to_js = [

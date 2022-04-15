@@ -3,7 +3,7 @@
  * Readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -14,7 +14,7 @@
  * Plugin Name: Readabler
  * Plugin URI: https://1.envato.market/readabler
  * Description: Web accessibility for Your WordPress site.
- * Version: 1.2.13
+ * Version: 1.3.0
  * Requires at least: 3.0
  * Requires PHP: 7.1
  * Author: Merkulove

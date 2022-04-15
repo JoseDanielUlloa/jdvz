@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -209,7 +209,7 @@ final class Plugin {
 
 		/** Fill $tabs field with default settings. */
 		$this->default_settings();
-		
+
     }
 
     /**
@@ -222,26 +222,13 @@ final class Plugin {
      **/
     private function default_settings() {
 
-        /** Add General Tab. */
         $this->add_general_tab();
-
-        /** Add Custom CSS Tab. */
         $this->add_custom_css_tab();
-
-        /** Add Assignments Tab. */
         $this->add_assignments_tab();
-
-        /** Add Activation Tab. */
         $this->add_activation_tab();
-
-        /** Add Status Tab. */
+        $this->add_migration_tab();
         $this->add_status_tab();
-
-        /** Add Updates Tab. */
         $this->add_updates_tab();
-
-        /** Add Uninstall Tab. */
-        $this->add_uninstall_tab();
 
     }
 
@@ -400,7 +387,7 @@ final class Plugin {
             'label'         => esc_html__( 'Status', 'readabler' ),
             'title'         => esc_html__( 'System Status', 'readabler' ),
             'show_title'    => true,
-            'icon'          => 'info',
+            'icon'          => 'insert_chart_outlined',
             'reports'       => [
                 'server'    => [
                     'enabled'               => true,
@@ -485,15 +472,15 @@ final class Plugin {
      *
      * @return void
      **/
-    private function add_uninstall_tab() {
+    private function add_migration_tab() {
 
-        self::$tabs['uninstall'] = [
+        self::$tabs['migration'] = [
             'enabled'       => true,
-            'class'         => TabUninstall::class,
-            'label'         => esc_html__( 'Uninstall', 'readabler' ),
-            'title'         => esc_html__( 'Uninstall Settings', 'readabler' ),
+            'class'         => TabMigration::class,
+            'label'         => esc_html__( 'Migration', 'readabler' ),
+            'title'         => esc_html__( 'Migration Settings', 'readabler' ),
             'show_title'    => true,
-            'icon'          => 'delete_sweep',
+            'icon'          => 'multiple_stop',
             'fields'        => [
                 'delete_plugin' => [
                     'type'              => 'select',
@@ -509,7 +496,7 @@ final class Plugin {
 
         /** Special config for Elementor & WPBakery plugins. */
         if ( in_array( self::extract_plugin_type(), [ 'elementor', 'wpbakery' ] ) ) {
-            unset( self::$tabs['uninstall']['fields']['delete_plugin']['options']['plugin+settings+data'] );
+            unset( self::$tabs['migration']['fields']['delete_plugin']['options']['plugin+settings+data'] );
         }
 
     }

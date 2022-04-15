@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -62,7 +62,7 @@ final class Config {
         $tabs = Plugin::get_tabs();
 
         /** Remove 'Delete plugin, settings and data' option from Uninstall tab. */
-        unset( $tabs['uninstall']['fields']['delete_plugin']['options']['plugin+settings+data'] );
+        unset( $tabs['migration']['fields']['delete_plugin']['options']['plugin+settings+data'] );
 
 	    /** Set System Requirements. */
 	    $tabs['status']['reports']['server']['allow_url_fopen'] = false;
@@ -1257,7 +1257,7 @@ final class Config {
                 'maxlength' => '4500'
             ]
         ];
-		
+
         # Button Icon
 		// Add to package.json to dependencies "mdc-icon-library": "git+https://bitbucket.org/wpelements/mdc-icon-library.git",
 		// and place 'mdc-icons' folder to /images

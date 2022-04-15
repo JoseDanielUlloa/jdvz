@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -58,7 +58,7 @@ final class Uninstall {
         $uninstall_mode = $this->get_uninstall_mode();
 
         /** Send uninstall Action to our host. */
-        // Helper::get_instance()->send_action( 'uninstall', Plugin::get_slug(), Plugin::get_version() );
+        // Helper::get_instance()->send_action( 'migration', Plugin::get_slug(), Plugin::get_version() );
 
         /** Remove Plugin and Settings. */
         if ( 'plugin+settings' === $uninstall_mode ) {
@@ -216,9 +216,9 @@ final class Uninstall {
      **/
     public function get_uninstall_mode() {
 
-        $uninstall_settings = get_option( 'mdp_readabler_uninstall_settings' );
+        $uninstall_settings = get_option( 'mdp_readabler_migration_settings' );
 
-        if ( isset( $uninstall_settings[ 'mdp_readabler_uninstall_settings' ] ) && $uninstall_settings[ 'mdp_readabler_uninstall_settings' ] ) { // Default value.
+        if ( isset( $uninstall_settings[ 'mdp_readabler_migration_settings' ] ) && $uninstall_settings[ 'mdp_readabler_migration_settings' ] ) { // Default value.
             $uninstall_settings = [
                 'delete_plugin' => 'plugin'
             ];

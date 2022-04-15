@@ -2272,67 +2272,67 @@ msgstr ""
 msgid "The minimum PHP version required for Readabler plugin is 5.6.0."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:262
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:249
 msgid "General"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:263
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:250
 msgid "General Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:289, wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:290
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:276, wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:277
 msgid "Custom CSS"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:296
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:283
 msgid "Add custom CSS here."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:323
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:310
 msgid "Assignments"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:324
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:311
 msgid "Assignments Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:373
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:360
 msgid "Activation"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:374, wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:350
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:361, wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:350
 msgid "Plugin Activation"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:400
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:387
 msgid "Status"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:401
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:388
 msgid "System Status"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:466, wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:467
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:453, wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:454
 msgid "Updates"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:493
-msgid "Uninstall"
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:480
+msgid "Migration"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:494
-msgid "Uninstall Settings"
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:481
+msgid "Migration Settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:501
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:488
 msgid "Delete plugin only"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:502
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:489
 msgid "Delete plugin and settings"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:503
+#: wp-content/plugins/readabler/src/Merkulove/Unity/Plugin.php:490
 msgid "Delete plugin, settings and data"
 msgstr ""
 
@@ -2647,7 +2647,7 @@ msgid "Activated"
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:288
-msgid "Subscribe to updates"
+msgid "Subscribe to newsletter"
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/TabActivation.php:289
@@ -3298,20 +3298,80 @@ msgstr ""
 msgid "For instance:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/TabStatus.php:238
-msgid "Some data will be sent to our server to verify purchase and to ensure that a plugin is compatible with your install. We will never collect any confidential data. All data is stored anonymously."
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:92
+msgid "Import settings:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUninstall.php:84
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:93
+msgid "Export settings:"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:95
 msgid "Removal settings:"
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUninstall.php:111
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:122
 msgid "Choose which data to delete upon using the \"Delete\" action in the \"Plugins\" admin page."
 msgstr ""
 
-#: wp-content/plugins/readabler/src/Merkulove/Unity/TabUninstall.php:117
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:128
 msgid "Delete plugin"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:145
+msgid "Import settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:146
+msgid "Drag & Drop file here"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:171
+msgid "Tab"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:172
+msgid "Export all settings from"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:172
+msgid "tab"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:186
+msgid "Export settings"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:324
+msgid "No settings for import"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:330
+msgid "Wrong settings format"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:336
+msgid "You are importing settings for"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:336
+msgid ", but this is"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:342
+msgid "You are importing settings for version"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:348
+msgid "Settings imported"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabMigration.php:354
+msgid "Unknown error"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/TabStatus.php:238
+msgid "Some data will be sent to our server to verify purchase and to ensure that a plugin is compatible with your install. We will never collect any confidential data. All data is stored anonymously."
 msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/TabUpdates.php:80
@@ -3340,4 +3400,28 @@ msgstr ""
 
 #: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:612
 msgid "Upload SVG"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:854
+msgid "Drop file here or click to upload."
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:851
+msgid "File exist"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:852
+msgid "Drop file here or click to upload"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:864
+msgid "Drag and drop or click on the form to add file"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:859
+msgid "Drag and drop or click on the form to replace file. |"
+msgstr ""
+
+#: wp-content/plugins/readabler/src/Merkulove/Unity/UI.php:860
+msgid "Reset"
 msgstr ""

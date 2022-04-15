@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -285,7 +285,7 @@ final class TabActivation extends Tab {
         ?>
         <div class="mdp-subscribe-form">
 
-            <h3><?php esc_html_e( 'Subscribe to updates', 'readabler' ); ?></h3>
+            <h3><?php esc_html_e( 'Subscribe to newsletter', 'readabler' ); ?></h3>
             <p><?php esc_html_e( 'Sign up for the newsletter to be the first to know about news and discounts.', 'readabler' ); ?></p>
             <p class="mdp-subscribe-form-message"
                data-success="<?php esc_html_e( 'Hurray! We received your Subscription request. Check your inbox for an email from us.', 'readabler' ); ?>"

@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.2.13
+ * @version         1.3.0
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -813,6 +813,62 @@ final class UI {
 		<?php endif;
 
 	}
+
+    /**
+     * Render Drag and Drop field.
+     *
+     * @since  1.0.0
+     * @access public
+     *
+     * @return void
+     *
+     * @noinspection PhpUnused
+     **/
+    public function render_import( $value, $label, $helper, $key, $tab ) {
+
+        $key_exist = $value !== '';
+        ?>
+        <div class="mdp-dnd">
+            <!--suppress HtmlFormInputWithoutLabel -->
+            <div class="mdc-text-field mdc-input-width mdc-text-field--outlined mdc-hidden">
+                <!--suppress HtmlFormInputWithoutLabel -->
+                <input  type="text"
+                        class="mdc-text-field__input mdp-drop-zone-input"
+                        name="mdp_readabler_<?php echo esc_attr( $tab ); ?>_settings[<?php echo esc_attr( $key ); ?>]"
+                        id="mdp-readabler-settings-dnd-<?php echo esc_attr( $key ); ?>"
+                        value="<?php esc_attr_e( $value ); ?>"
+                >
+                <div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                        <label for="mdp-readabler-settings-dnd-<?php echo esc_attr( $key ); ?>" class="mdc-floating-label mdc-floating-label--float-above"><?php echo esc_html( $label ); ?></label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+            </div>
+            <div id="mdp-<?php echo esc_attr( $key ); ?>-drop-zone" class="<?php if ( $key_exist ) : ?>mdp-key-uploaded <?php endif; ?>mdp-drop-zone">
+                <?php if ( $key_exist ) : ?>
+                    <span class="material-icons">check_circle_outline</span><?php esc_html_e( 'File exist', 'readabler' ); ?>
+                    <span class="mdp-drop-zone-hover"><?php esc_html_e( 'Drop file here or click to upload', 'readabler' ); ?></span>
+                <?php else : ?>
+                    <span class="material-icons">cloud</span><?php esc_html_e( 'Drop file here or click to upload.', 'readabler' ); ?>
+                <?php endif; ?>
+            </div>
+            <?php if ( $key_exist ) : ?>
+                <div class="mdp-messages mdc-text-field-helper-line mdc-text-field-helper-text mdc-text-field-helper-text--persistent">
+                    <?php esc_html_e( 'Drag and drop or click on the form to replace file. |', 'readabler' ); ?>
+                    <a href="#" class="mdp-reset-key-btn"><?php esc_html_e( 'Reset', 'readabler' ); ?></a>
+                </div>
+            <?php else : ?>
+                <div class="mdp-messages mdc-text-field-helper-line mdc-text-field-helper-text mdc-text-field-helper-text--persistent">
+                    <?php esc_html_e( 'Drag and drop or click on the form to add file', 'readabler' ); ?>
+                </div>
+            <?php endif; ?>
+            <input id="mdp-dnd-file-input" type="file" name="name" class="mdc-hidden" />
+        </div>
+        <?php
+
+    }
 
 	/**
 	 * Main UI Instance.
