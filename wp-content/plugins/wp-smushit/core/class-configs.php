@@ -8,6 +8,8 @@
 
 namespace Smush\Core;
 
+use WP_Error;
+use WP_REST_Request;
 use WP_Smush;
 
 /**
@@ -44,7 +46,7 @@ class Configs {
 	private $settings_labels;
 
 	/**
-	 * Gets the local list of configs via Smush's endpoint.
+	 * Gets the local list of configs via Smush endpoint.
 	 *
 	 * @since 3.8.6
 	 *
@@ -61,24 +63,37 @@ class Configs {
 	}
 
 	/**
-	 * Updates the local list of configs via Smush's endpoint.
+	 * Updates the local list of configs via Smush endpoint.
 	 *
 	 * @since 3.8.6
 	 *
-	 * @param \WP_REST_Request $request Class containing the request data.
-	 * @return bool
+	 * @param WP_REST_Request $request Class containing the request data.
+	 *
+	 * @return array|WP_Error
 	 */
 	public function post_callback( $request ) {
 		$data = json_decode( $request->get_body(), true );
 		if ( ! is_array( $data ) ) {
-			return new \WP_Error( '400', esc_html__( 'Missing configs data', 'wp-smushit' ), array( 'status' => 400 ) );
+			return new WP_Error( '400', esc_html__( 'Missing configs data', 'wp-smushit' ), array( 'status' => 400 ) );
+		}
+
+		foreach ( $data as $key => $value ) {
+			if ( isset( $value['name'] ) ) {
+				$name = sanitize_text_field( $value['name'] );
+
+				$data[ $key ]['name'] = empty( $name ) ? __( 'Undefined', 'wp-smushit' ) : $name;
+			}
+
+			if ( isset( $value['description'] ) ) {
+				$data[ $key ]['description'] = sanitize_text_field( $value['description'] );
+			}
 		}
 
 		// Do we really need to re-sanitize here?
 		$sanitized_data = $this->sanitize_configs_list( $data );
 		update_site_option( 'wp-smush-' . self::OPTION_NAME, $sanitized_data );
 
-		return $data;
+		return $sanitized_data;
 	}
 
 	/**
@@ -153,11 +168,23 @@ class Configs {
 		foreach ( $configs_list as $config_data ) {
 			$sanitized_data = array(
 				'id'          => filter_var( $config_data['id'], FILTER_VALIDATE_INT ),
-				'name'        => filter_var( $config_data['name'], FILTER_SANITIZE_STRING ),
-				'description' => filter_var( $config_data['description'], FILTER_SANITIZE_STRING ),
+				'name'        => filter_var( $config_data['name'], FILTER_SANITIZE_SPECIAL_CHARS ),
+				'description' => filter_var(
+					$config_data['description'],
+					FILTER_CALLBACK,
+					array(
+						'options' => 'sanitize_text_field',
+					)
+				),
 				'config'      => array(
 					'configs' => $this->sanitize_config( $config_data['config']['configs'] ),
-					'strings' => filter_var( $config_data['config']['strings'], FILTER_SANITIZE_STRING, FILTER_REQUIRE_ARRAY ),
+					'strings' => filter_var(
+						$config_data['config']['strings'],
+						FILTER_CALLBACK,
+						array(
+							'options' => 'sanitize_text_field',
+						)
+					),
 				),
 			);
 
@@ -187,7 +214,7 @@ class Configs {
 		try {
 			return $this->decode_and_validate_config_file( $file );
 		} catch ( \Exception $e ) {
-			return new \WP_Error( 'error_saving', $e->getMessage() );
+			return new WP_Error( 'error_saving', $e->getMessage() );
 		}
 	}
 
@@ -258,7 +285,7 @@ class Configs {
 
 		$config = false;
 		foreach ( $stored_configs as $config_data ) {
-			if ( strval( $config_data['id'] ) === $id ) {
+			if ( (int) $config_data['id'] === (int) $id ) {
 				$config = $config_data;
 				break;
 			}
@@ -266,7 +293,7 @@ class Configs {
 
 		// The config with the given ID doesn't exist.
 		if ( ! $config ) {
-			return new \WP_Error( '404', __( 'The given config ID does not exist', 'wp-smushit' ) );
+			return new WP_Error( '404', __( 'The given config ID does not exist', 'wp-smushit' ) );
 		}
 
 		$this->apply_config( $config['config']['configs'] );
@@ -313,6 +340,10 @@ class Configs {
 				// Update the flag file when local webp changes.
 				if ( isset( $new_settings['webp_mod'] ) && $new_settings['webp_mod'] !== $stored_settings['webp_mod'] ) {
 					WP_Smush::get_instance()->core()->mod->webp->toggle_webp( $new_settings['webp_mod'] );
+					// Hide the wizard form if Local Webp is configured.
+					if ( WP_Smush::get_instance()->core()->mod->webp->is_configured() ) {
+						update_site_option( 'wp-smush-webp_hide_wizard', 1 );
+					}
 				}
 
 				// Update the CDN status for CDN changes.
@@ -433,7 +464,13 @@ class Configs {
 			if ( ! is_array( $config['networkwide'] ) ) {
 				$sanitized['networkwide'] = $config['networkwide'];
 			} else {
-				$sanitized['networkwide'] = filter_var( $config['networkwide'], FILTER_SANITIZE_STRING, FILTER_REQUIRE_ARRAY );
+				$sanitized['networkwide'] = filter_var(
+					$config['networkwide'],
+					FILTER_CALLBACK,
+					array(
+						'options' => 'sanitize_text_field',
+					)
+				);
 			}
 		}
 
@@ -463,15 +500,19 @@ class Configs {
 					'flags'  => FILTER_REQUIRE_ARRAY,
 				),
 				'animation'       => array(
-					'filter' => FILTER_SANITIZE_STRING,
+					'filter' => FILTER_SANITIZE_SPECIAL_CHARS,
 					'flags'  => FILTER_REQUIRE_ARRAY,
 				),
 				'include'         => array(
 					'filter' => FILTER_VALIDATE_BOOLEAN,
 					'flags'  => FILTER_REQUIRE_ARRAY,
 				),
+				'exclude-pages' => array(
+					'filter' => FILTER_SANITIZE_URL,
+					'flags'  => FILTER_REQUIRE_ARRAY,
+				),
 				'exclude-classes' => array(
-					'filter' => FILTER_SANITIZE_STRING,
+					'filter' => FILTER_SANITIZE_SPECIAL_CHARS,
 					'flags'  => FILTER_REQUIRE_ARRAY,
 				),
 				'footer'          => FILTER_VALIDATE_BOOLEAN,
