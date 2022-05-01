@@ -548,6 +548,10 @@ a:visited {
   color: var(--color-light);
 }
 
+.post-content {
+  text-align: justify;
+}
+
 .post-content a {
   color: var(--color-secondary);
   font-weight: bold;
