@@ -707,6 +707,10 @@ a:visited {
 
 /***** Contact page styles *****/
 
+#nf-form-1-cont {
+  text-align: center;
+}
+
 .nf-form-content input[type="button"] {
   width: 20% !important;
 }
