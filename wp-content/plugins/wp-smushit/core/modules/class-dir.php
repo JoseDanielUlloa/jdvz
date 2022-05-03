@@ -179,6 +179,7 @@ class Dir extends Abstract_Module {
 	 * @since 2.8.1
 	 */
 	public function directory_smush_start() {
+		check_ajax_referer( 'wp-smush-ajax' );
 		$this->scanner->init_scan();
 		wp_send_json_success();
 	}
@@ -189,8 +190,10 @@ class Dir extends Abstract_Module {
 	 * @since 2.8.1
 	 */
 	public function directory_smush_check_step() {
+		check_ajax_referer( 'wp-smush-ajax' );
+
 		$urls         = $this->get_scanned_images();
-		$current_step = absint( $_POST['step'] ); // Input var ok.
+		$current_step = isset( $_POST['step'] ) ? absint( $_POST['step'] ) : 0;
 
 		$this->scanner->update_current_step( $current_step );
 
@@ -207,9 +210,11 @@ class Dir extends Abstract_Module {
 	 * @since 2.8.1
 	 */
 	public function directory_smush_finish() {
-		$items   = isset( $_POST['items'] ) ? absint( $_POST['items'] ) : 0; // Input var ok.
-		$failed  = isset( $_POST['failed'] ) ? absint( $_POST['failed'] ) : 0; // Input var ok.
-		$skipped = isset( $_POST['skipped'] ) ? absint( $_POST['skipped'] ) : 0; // Input var ok.
+		check_ajax_referer( 'wp-smush-ajax' );
+
+		$items   = isset( $_POST['items'] ) ? absint( $_POST['items'] ) : 0;
+		$failed  = isset( $_POST['failed'] ) ? absint( $_POST['failed'] ) : 0;
+		$skipped = isset( $_POST['skipped'] ) ? absint( $_POST['skipped'] ) : 0;
 
 		// If any images failed to smush, store count.
 		if ( $failed > 0 ) {
@@ -232,6 +237,7 @@ class Dir extends Abstract_Module {
 	 * @since 2.8.1
 	 */
 	public function directory_smush_cancel() {
+		check_ajax_referer( 'wp-smush-ajax' );
 		$this->scanner->reset_scan();
 		wp_send_json_success();
 	}

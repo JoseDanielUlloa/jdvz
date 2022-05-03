@@ -399,6 +399,7 @@ class Backup extends Abstract_Module {
 		}
 
 		$attachment_id = (int) $attachment_id;
+
 		$mod = WP_Smush::get_instance()->core()->mod;
 
 		// Set an option to avoid the smush-restore-smush loop.

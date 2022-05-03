@@ -165,6 +165,8 @@ class NextGen extends Abstract_Integration {
 	public function smush_bulk() {
 		$stats = array();
 
+		check_ajax_referer( 'wp-smush-ajax', '_nonce' );
+
 		if ( empty( $_GET['attachment_id'] ) ) {
 			wp_send_json_error(
 				array(

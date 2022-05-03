@@ -8,6 +8,7 @@
 
 namespace Smush\Core;
 
+use Exception;
 use WP_Error;
 use WP_REST_Request;
 use WP_Smush;
@@ -34,16 +35,6 @@ class Configs {
 	 * @var array
 	 */
 	private $pro_features = array( 'lossy', 'original', 'backup', 'png_to_jpg', 's3', 'nextgen', 'cdn', 'auto_resize', 'webp', 'webp_mod' );
-
-	/**
-	 * Array of the settings and their labels.
-	 * The setting's name is the key of the array, the label its value.
-	 *
-	 * @since 3.8.5
-	 *
-	 * @var array
-	 */
-	private $settings_labels;
 
 	/**
 	 * Gets the local list of configs via Smush endpoint.
@@ -77,19 +68,6 @@ class Configs {
 			return new WP_Error( '400', esc_html__( 'Missing configs data', 'wp-smushit' ), array( 'status' => 400 ) );
 		}
 
-		foreach ( $data as $key => $value ) {
-			if ( isset( $value['name'] ) ) {
-				$name = sanitize_text_field( $value['name'] );
-
-				$data[ $key ]['name'] = empty( $name ) ? __( 'Undefined', 'wp-smushit' ) : $name;
-			}
-
-			if ( isset( $value['description'] ) ) {
-				$data[ $key ]['description'] = sanitize_text_field( $value['description'] );
-			}
-		}
-
-		// Do we really need to re-sanitize here?
 		$sanitized_data = $this->sanitize_configs_list( $data );
 		update_site_option( 'wp-smush-' . self::OPTION_NAME, $sanitized_data );
 
@@ -166,16 +144,18 @@ class Configs {
 		$sanitized_list = array();
 
 		foreach ( $configs_list as $config_data ) {
+			if ( isset( $config_data['name'] ) ) {
+				$name = sanitize_text_field( $config_data['name'] );
+			}
+
+			if ( isset( $config_data['description'] ) ) {
+				$description = sanitize_text_field( $config_data['description'] );
+			}
+
 			$sanitized_data = array(
 				'id'          => filter_var( $config_data['id'], FILTER_VALIDATE_INT ),
-				'name'        => filter_var( $config_data['name'], FILTER_SANITIZE_SPECIAL_CHARS ),
-				'description' => filter_var(
-					$config_data['description'],
-					FILTER_CALLBACK,
-					array(
-						'options' => 'sanitize_text_field',
-					)
-				),
+				'name'        => empty( $name ) ? __( 'Undefined', 'wp-smushit' ) : $name,
+				'description' => empty( $description ) ? '' : $description,
 				'config'      => array(
 					'configs' => $this->sanitize_config( $config_data['config']['configs'] ),
 					'strings' => filter_var(
@@ -208,12 +188,12 @@ class Configs {
 	 *
 	 * @param array $file The uploaded file.
 	 *
-	 * @return true|string
+	 * @return array|WP_Error
 	 */
 	public function save_uploaded_config( $file ) {
 		try {
 			return $this->decode_and_validate_config_file( $file );
-		} catch ( \Exception $e ) {
+		} catch ( Exception $e ) {
 			return new WP_Error( 'error_saving', $e->getMessage() );
 		}
 	}
@@ -227,48 +207,56 @@ class Configs {
 	 *
 	 * @return array
 	 *
-	 * @throws \Exception When there's an error with the uploaded file.
+	 * @throws Exception When there's an error with the uploaded file.
 	 */
 	private function decode_and_validate_config_file( $file ) {
 		if ( ! $file ) {
-			throw new \Exception( __( 'The configs file is required', 'wp-smushit' ) );
+			throw new Exception( __( 'The configs file is required', 'wp-smushit' ) );
 		} elseif ( ! empty( $file['error'] ) ) {
 			/* translators: error message */
-			throw new \Exception( sprintf( __( 'Error: %s.', 'wp-smushit' ), $file['error'] ) );
+			throw new Exception( sprintf( __( 'Error: %s.', 'wp-smushit' ), $file['error'] ) );
 		} elseif ( 'application/json' !== $file['type'] ) {
-			throw new \Exception( __( 'The file must be a JSON.', 'wp-smushit' ) );
+			throw new Exception( __( 'The file must be a JSON.', 'wp-smushit' ) );
 		}
 
 		// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 		$json_file = file_get_contents( $file['tmp_name'] );
 		if ( ! $json_file ) {
-			throw new \Exception( __( 'There was an error getting the contents of the file.', 'wp-smushit' ) );
+			throw new Exception( __( 'There was an error getting the contents of the file.', 'wp-smushit' ) );
 		}
 
 		$configs = json_decode( $json_file, true );
 		if ( empty( $configs ) || ! is_array( $configs ) ) {
-			throw new \Exception( __( 'There was an error decoding the file.', 'wp-smushit' ) );
+			throw new Exception( __( 'There was an error decoding the file.', 'wp-smushit' ) );
 		}
 
 		// Make sure the config has a name and configs.
 		if ( empty( $configs['name'] ) || empty( $configs['config'] ) ) {
-			throw new \Exception( __( 'The uploaded config must have a name and a set of settings. Please make sure the uploaded file is the correct one.', 'wp-smushit' ) );
+			throw new Exception( __( 'The uploaded config must have a name and a set of settings. Please make sure the uploaded file is the correct one.', 'wp-smushit' ) );
 		}
 
 		// Sanitize.
-		$configs['config'] = array(
-			'configs' => $this->sanitize_config( $configs['config']['configs'] ),
-			// Let's re-create this to avoid differences between imported settings coming from other versions.
-			'strings' => $this->format_config_to_display( $configs['config']['configs'] ),
-		);
+		$plugin  = isset( $configs['plugin'] ) ? $configs['plugin'] : 0;
+		$configs = $this->sanitize_configs_list( array( $configs ) );
+		$configs = $configs[0];
+
+		// Restore back plugin ID.
+		$configs['plugin'] = $plugin;
+
+		// Let's re-create this to avoid differences between imported settings coming from other versions.
+		$configs['config']['strings'] = $this->format_config_to_display( $configs['config']['configs'] );
 
 		if ( empty( $configs['config']['configs'] ) ) {
-			throw new \Exception( __( 'The provided configs list isn’t correct. Please make sure the uploaded file is the correct one.', 'wp-smushit' ) );
+			throw new Exception( __( 'The provided configs list isn’t correct. Please make sure the uploaded file is the correct one.', 'wp-smushit' ) );
 		}
 
 		// Don't keep these if they exist.
-		unset( $configs['hub_id'] );
-		unset( $configs['default'] );
+		if ( isset( $configs['hub_id'] ) ) {
+			unset( $configs['hub_id'] );
+		}
+		if ( isset( $configs['default'] ) ) {
+			unset( $configs['default'] );
+		}
 
 		return $configs;
 	}
@@ -279,6 +267,8 @@ class Configs {
 	 * @since 3.8.6
 	 *
 	 * @param string $id The ID of the config to apply.
+	 *
+	 * @return void|WP_Error
 	 */
 	public function apply_config_by_id( $id ) {
 		$stored_configs = get_site_option( 'wp-smush-' . self::OPTION_NAME );
@@ -307,7 +297,6 @@ class Configs {
 	 * @param array $config The config to apply.
 	 */
 	public function apply_config( $config ) {
-
 		$sanitized_config = $this->sanitize_config( $config );
 
 		// Update 'networkwide' options in multisites.
@@ -462,7 +451,7 @@ class Configs {
 
 		if ( isset( $config['networkwide'] ) ) {
 			if ( ! is_array( $config['networkwide'] ) ) {
-				$sanitized['networkwide'] = $config['networkwide'];
+				$sanitized['networkwide'] = sanitize_text_field( $config['networkwide'] );
 			} else {
 				$sanitized['networkwide'] = filter_var(
 					$config['networkwide'],
@@ -507,7 +496,7 @@ class Configs {
 					'filter' => FILTER_VALIDATE_BOOLEAN,
 					'flags'  => FILTER_REQUIRE_ARRAY,
 				),
-				'exclude-pages' => array(
+				'exclude-pages'   => array(
 					'filter' => FILTER_SANITIZE_URL,
 					'flags'  => FILTER_REQUIRE_ARRAY,
 				),
@@ -664,7 +653,7 @@ class Configs {
 	 *
 	 * @param array $config The config to format.
 	 *
-	 * @return string
+	 * @return array
 	 */
 	private function get_lazy_load_settings_to_display( $config ) {
 		$formatted_rows = array();

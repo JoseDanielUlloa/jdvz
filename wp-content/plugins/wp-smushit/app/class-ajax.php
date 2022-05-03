@@ -330,6 +330,14 @@ class Ajax {
 		// Turn off errors for ajax result.
 		@error_reporting( 0 );
 
+		if ( ! check_ajax_referer( 'wp-smush-ajax', '_nonce', false ) ) {
+			wp_send_json_error(
+				array(
+					'error_msg' => __( 'Nonce verification failed', 'wp-smushit' ),
+				)
+			);
+		}
+
 		if ( ! current_user_can( 'upload_files' ) ) {
 			wp_send_json_error(
 				array(
@@ -386,7 +394,7 @@ class Ajax {
 		}
 
 		// Check nonce.
-		if ( ! wp_verify_nonce( $_POST['_nonce'], 'wp-smush-resmush-' . $_POST['attachment_id'] ) ) {
+		if ( ! wp_verify_nonce( wp_unslash( $_POST['_nonce'] ), 'wp-smush-resmush-' . (int) $_POST['attachment_id'] ) ) {
 			wp_send_json_error(
 				array(
 					'error_msg' => '<div class="wp-smush-error">' . esc_html__( "Image couldn't be smushed as the nonce verification failed, try reloading the page.", 'wp-smushit' ) . '</div>',
@@ -806,6 +814,8 @@ class Ajax {
 	 * @since 1.9.0
 	 */
 	public function ignore_bulk_image() {
+		check_ajax_referer( 'wp-smush-ajax' );
+
 		if ( ! isset( $_POST['id'] ) ) {
 			wp_send_json_error();
 		}
@@ -829,6 +839,8 @@ class Ajax {
 	public function process_smush_request() {
 		// Turn off errors for ajax result.
 		@error_reporting( 0 );
+
+		check_ajax_referer( 'wp-smush-ajax', '_nonce' );
 
 		// If the bulk smush needs to be stopped.
 		if ( ! WP_Smush::is_pro() && ! Core::check_bulk_limit() ) {
