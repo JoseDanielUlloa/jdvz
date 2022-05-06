@@ -115,7 +115,7 @@ __webpack_require__.r(__webpack_exports__);
     $( document ).ready( function () {
 
         const $exportButton = document.querySelector( '#mdp-export-btn' );
-        const { ajaxURL, nonce } = mdpReadabler;
+        const { ajaxURL, nonce } = mdpReadablerUnity;
 
         /**
          * Export settings

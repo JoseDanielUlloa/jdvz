@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -202,7 +202,7 @@ final class TabMigration extends Tab {
     public function ajax_export_settings() {
 
         /** Check nonce for security. */
-        check_ajax_referer( 'readabler', 'nonce' );
+        check_ajax_referer( 'readabler-unity', 'nonce' );
 
         $options = Settings::get_instance()->options;
 
@@ -219,7 +219,24 @@ final class TabMigration extends Tab {
             if ( strpos( $opt,'export_' ) === 0 && $val === 'on' ) {
 
                 $tab = str_replace( 'export_', '', $opt );
-                $export[ $tab ] = get_option( 'mdp_readabler_' . $tab . '_settings' );
+                $tab_options = get_option( 'mdp_readabler_' . $tab . '_settings' );
+
+                // Filtering option for export
+                $filtered_option = array();
+                foreach( $tab_options as $key => $option ) {
+
+                    // Remove string options with multiline text
+                    if ( strpos( $option, '
+' ) > 0 && $tab !== 'custom_css' ) {
+                        continue;
+                    }
+
+                    $filtered_option[ $key ] = $option;
+
+                }
+
+                $export[ $tab ] = $filtered_option;
+
             }
 
         }
@@ -235,7 +252,7 @@ final class TabMigration extends Tab {
     public function ajax_import_settings() {
 
         /** Check nonce for security. */
-        check_ajax_referer( 'readabler', 'nonce' );
+        check_ajax_referer( 'readabler-unity', 'nonce' );
 
         // Get settings
         $import = isset( $_POST[ 'import' ] ) ? urldecode( $_POST[ 'import' ] ) : '';

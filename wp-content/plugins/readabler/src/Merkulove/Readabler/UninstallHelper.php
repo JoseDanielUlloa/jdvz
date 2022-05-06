@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -51,6 +51,8 @@ final class UninstallHelper {
 
         /** Remove Plugin and Settings. */
         if ( 'plugin' === $uninstall_mode ) {
+
+			delete_option( 'mdp-readabler-grace' );
 
         /** Remove Plugin and Settings. */
         } elseif ( 'plugin+settings' === $uninstall_mode ) {

@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -311,8 +311,7 @@ final class Controls {
 		$options = Settings::get_instance()->options;
 
         /** Don't render section if no one section */
-        if ( ! in_array( 'on' , [
-	        $options[ 'readable_experience_heading' ],
+        if ( in_array( 'on' , [
 	        $options[ 'content_scaling' ],
 	        $options[ 'readable_font' ],
 	        $options[ 'dyslexia_font' ],
@@ -326,14 +325,12 @@ final class Controls {
 	        $options[ 'align_center' ],
 	        $options[ 'align_right']
         ] ) ) {
-            return;
+	        ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['readable_experience_heading'] ) { ?>
+                <h4><?php esc_html_e( 'Readable Experience', 'readabler' ); ?></h4>
+	        <?php } ?></div><?php
         }
 
-        ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['readable_experience_heading'] ) { ?>
-            <h4><?php esc_html_e( 'Readable Experience', 'readabler' ); ?></h4>
-        <?php } ?></div>
-
-        <div id="mdp-readabler-readable-experience-box"><?php
+        ?><div id="mdp-readabler-readable-experience-box"><?php
 
 		    /** Content Scaling. */
             if ( 'on' === $options[ 'content_scaling' ] ) {
@@ -502,7 +499,7 @@ final class Controls {
 		$options = Settings::get_instance()->options;
 
 	    /** Don't render section if no one section */
-	    if ( ! in_array( 'on' , [
+	    if ( in_array( 'on' , [
 		    $options[ 'dark_contrast' ],
 		    $options[ 'light_contrast' ],
 		    $options[ 'monochrome' ],
@@ -513,119 +510,115 @@ final class Controls {
 		    $options[ 'title_colors' ],
 		    $options[ 'background_colors' ]
 	    ] ) ) {
-		    return;
+		    ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['visually_pleasing_heading'] ) { ?>
+                <h4><?php esc_html_e( 'Visually Pleasing Experience', 'readabler' ); ?></h4>
+		    <?php } ?></div><?php
 	    }
 
-        ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['visually_pleasing_heading'] ) { ?>
-            <h4><?php esc_html_e( 'Visually Pleasing Experience', 'readabler' ); ?></h4>
-        <?php } ?></div>
+        ?><div id="mdp-readabler-visually-pleasing-experience-box"><?php
 
-		<div id="mdp-readabler-visually-pleasing-experience-box"><?php
+            /** Dark Contrast. */
+            if ( 'on' === $options[ 'dark_contrast' ] ) {
 
-                /** Dark Contrast. */
-	            if ( 'on' === $options[ 'dark_contrast' ] ) {
+                $this->render_toggle_button(
+                    'dark_contrast',
+                    esc_html__( 'Dark Contrast', 'readabler' )
+                );
 
-                    $this->render_toggle_button(
-                        'dark_contrast',
-                        esc_html__( 'Dark Contrast', 'readabler' )
-                    );
+            }
 
-                }
+            /** Light Contrast. */
+            if ( 'on' === $options[ 'light_contrast' ] ) {
 
-	            /** Light Contrast. */
-                if ( 'on' === $options[ 'light_contrast' ] ) {
+                $this->render_toggle_button(
+                    'light_contrast',
+                    esc_html__( 'Light Contrast', 'readabler' )
+                );
 
-	                $this->render_toggle_button(
-		                'light_contrast',
-		                esc_html__( 'Light Contrast', 'readabler' )
-	                );
+            }
 
-                }
+            /** Monochrome. */
+            if ( 'on' === $options[ 'monochrome' ] ) {
 
-	            /** Monochrome. */
-                if ( 'on' === $options[ 'monochrome' ] ) {
+                $this->render_toggle_button(
+                    'monochrome',
+                    esc_html__( 'Monochrome', 'readabler' )
+                );
 
-	                $this->render_toggle_button(
-		                'monochrome',
-		                esc_html__( 'Monochrome', 'readabler' )
-	                );
+            }
 
-                }
+            /** High Contrast. */
+            if ( 'on' === $options[ 'high_contrast' ] ) {
 
-                /** High Contrast. */
-                if ( 'on' === $options[ 'high_contrast' ] ) {
+                $this->render_toggle_button(
+                    'high_contrast',
+                    esc_html__( 'High Contrast', 'readabler' )
+                );
 
-                    $this->render_toggle_button(
-                        'high_contrast',
-                        esc_html__( 'High Contrast', 'readabler' )
-                    );
+            }
 
-                }
+            /** High Saturation. */
+            if ( 'on' === $options[ 'high_saturation' ] ||
+                 'on' === $options[ 'profile_visually_impaired' ] ||
+                 'on' === $options[ 'profile_adhd_friendly' ] ) {
 
-                /** High Saturation. */
-                if ( 'on' === $options[ 'high_saturation' ] ||
-                     'on' === $options[ 'profile_visually_impaired' ] ||
-                     'on' === $options[ 'profile_adhd_friendly' ] ) {
+                /** Hidden render. */
+                $hide = false;
+                if ( 'on' !== $options['high_saturation'] ) { $hide = true; }
 
-	                /** Hidden render. */
-	                $hide = false;
-	                if ( 'on' !== $options['high_saturation'] ) { $hide = true; }
+                $this->render_toggle_button(
+                    'high_saturation',
+                    esc_html__( 'High Saturation', 'readabler' ),
+                    $hide
+                );
 
-	                $this->render_toggle_button(
-		                'high_saturation',
-		                esc_html__( 'High Saturation', 'readabler' ),
-		                $hide
-	                );
+            }
 
-                }
+            /** Low Saturation. */
+            if ( 'on' === $options['low_saturation'] ||
+                 'on' === $options['profile_epilepsy'] ) {
 
-                /** Low Saturation. */
-                if ( 'on' === $options['low_saturation'] ||
-                     'on' === $options['profile_epilepsy'] ) {
+                /** Hidden render. */
+                $hide = false;
+                if ( 'on' !== $options['low_saturation'] ) { $hide = true; }
 
-                    /** Hidden render. */
-                    $hide = false;
-                    if ( 'on' !== $options['low_saturation'] ) { $hide = true; }
+                $this->render_toggle_button(
+                    'low_saturation',
+                    esc_html__( 'Low Saturation', 'readabler' ),
+                    $hide
+                );
 
-	                $this->render_toggle_button(
-		                'low_saturation',
-		                esc_html__( 'Low Saturation', 'readabler' ),
-		                $hide
-	                );
+            }
 
-                }
+            /** Text Colors. */
+            if ( 'on' === $options[ 'text_colors' ] ) {
 
-                /** Text Colors. */
-                if ( 'on' === $options[ 'text_colors' ] ) {
+                $this->render_palette(
+                    'text_colors',
+                    esc_html__( 'Adjust Text Colors', 'readabler' )
+                );
 
-	                $this->render_palette(
-		                'text_colors',
-		                esc_html__( 'Adjust Text Colors', 'readabler' )
-	                );
+            }
 
-                }
+            /** Title Colors. */
+            if ( 'on' === $options[ 'title_colors' ] ) {
 
-                /** Title Colors. */
-                if ( 'on' === $options[ 'title_colors' ] ) {
+                $this->render_palette(
+                    'title_colors',
+                    esc_html__( 'Adjust Title Colors', 'readabler' )
+                );
 
-	                $this->render_palette(
-		                'title_colors',
-		                esc_html__( 'Adjust Title Colors', 'readabler' )
-	                );
+            }
 
-                }
+            /** Background Colors. */
+            if ( 'on' === $options[ 'background_colors' ] ) {
 
-                /** Background Colors. */
-                if ( 'on' === $options[ 'background_colors' ] ) {
+                $this->render_palette(
+                    'background_colors',
+                    esc_html__( 'Adjust Background Colors', 'readabler' )
+                );
 
-	                $this->render_palette(
-		                'background_colors',
-		                esc_html__( 'Adjust Background Colors', 'readabler' )
-	                );
-
-                }
-
-
+            }
 
         ?></div><?php
 
@@ -647,7 +640,7 @@ final class Controls {
 		$options = Settings::get_instance()->options;
 
 	    /** Don't render section if no one section */
-	    if ( ! in_array( 'on' , [
+	    if ( in_array( 'on' , [
 		    $options[ 'mute_sounds' ],
 		    $options[ 'hide_images' ],
 		    $options[ 'virtual_keyboard' ],
@@ -662,14 +655,12 @@ final class Controls {
 		    $options[ 'text_to_speech' ],
 		    $options[ 'keyboard_navigation' ],
 	    ] ) ) {
-		    return;
+		    ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['easy_orientation_heading'] ) { ?>
+                <h4><?php esc_html_e( 'Easy Orientation', 'readabler' ); ?></h4>
+		    <?php } ?></div><?php
 	    }
 
-        ?><div class="mdp-readabler-subheader"><?php if ( 'on' === $options['easy_orientation_heading'] ) { ?>
-            <h4><?php esc_html_e( 'Easy Orientation', 'readabler' ); ?></h4>
-        <?php } ?></div>
-
-		<div id="mdp-readabler-easy-orientation-box"><?php
+        ?><div id="mdp-readabler-easy-orientation-box"><?php
 
             /** Mute Sounds. */
             if ( 'on' === $options[ 'mute_sounds' ] ) {

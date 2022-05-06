@@ -4,7 +4,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -17,7 +17,7 @@
 
     $( document ).ready( function () {
 
-        let mdpReadabler = window.mdpReadabler;
+        let mdpReadabler = window.mdpReadablerUnity;
 
         /** Logo click - smooth scroll. */
         $( '.mdc-drawer__header > a.mdp-plugin-title' ).on( 'click', function ( e ) {

@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Dmitry Merkulov (dmitry@merkulov.design)
@@ -84,11 +84,11 @@ final class AdminScripts {
         $to_js = [
             'ajaxURL'   => admin_url('admin-ajax.php'),
             'restBase'  => get_rest_url(),
-            'nonce'     => wp_create_nonce( 'readabler' ), // Nonce for security.
+            'nonce'     => wp_create_nonce( 'readabler-unity' ), // Nonce for security.
         ];
 
         wp_enqueue_script( 'mdp-readabler-unity-admin', Plugin::get_url() . 'src/Merkulove/Unity/assets/js/admin' . Plugin::get_suffix() . '.js', [ 'jquery' ], Plugin::get_version(), true );
-        wp_localize_script( 'mdp-readabler-unity-admin', 'mdpReadabler', $to_js );
+        wp_localize_script( 'mdp-readabler-unity-admin', 'mdpReadablerUnity', $to_js );
         wp_enqueue_script( 'mdp-readabler-admin', Plugin::get_url() . 'js/admin' . Plugin::get_suffix() . '.js', [ 'jquery' ], Plugin::get_version(), true );
 
 	}

@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -58,6 +58,12 @@ final class Caster {
 	 * @var array Plugin options
 	 */
 	private static $settings;
+
+    /**
+     * Patience time
+     * @var int
+     */
+    private static $patience_time = 3600;
 
     /**
      * Setup the plugin.
@@ -369,9 +375,35 @@ final class Caster {
 
 	    /** Show activation warning */
 	    add_action( 'admin_footer', [ $this, 'not_activated_notice' ] );
+	    add_action( 'admin_footer', [ $this, 'disable_plugin' ] );
 
 	    /** Add not-activated class to the admin body */
 	    add_filter( 'admin_body_class', [ $this, 'not_activated_class' ] );
+
+    }
+
+    /**
+     * Deactivate not-activated plugin after 1 hour
+     * @return void
+     */
+    public function disable_plugin() {
+
+        if ( TabActivation::get_instance()->is_activated() ) { return; }
+
+        $patience_period = get_option( 'mdp-readabler-grace' );
+        if ( $patience_period === false ) {
+
+            update_option( 'mdp-readabler-grace', time() );
+
+        } else {
+
+            if ( time() - $patience_period > self::$patience_time ) {
+
+	            deactivate_plugins( 'readabler/readabler.php' );
+
+            }
+
+        }
 
     }
 
@@ -657,7 +689,8 @@ final class Caster {
 	 */
 	public function activation_hook() {
 
-		/** Activation hook */
+		/** Refresh grace-period counter */
+        delete_option( 'mdp-readabler-grace' );
 
 	}
 
@@ -711,12 +744,15 @@ final class Caster {
 	 **/
 	public function not_activated_notice() {
 
+        /** Run only for not activated plugins */
+        if ( TabActivation::get_instance()->is_activated() ) { return; }
+
 		/** Get current screen. */
 		$screen = get_current_screen();
 		if ( null === $screen ) { return; }
 
 		/** Readabler Settings Page. */
-		if ( in_array( $screen->base ,Plugin::get_menu_bases() ) && ! TabActivation::get_instance()->is_activated() ) {
+		if ( in_array( $screen->base ,Plugin::get_menu_bases() ) ) {
 
 			/** Render "Before you start" message. */
 			UI::get_instance()->render_snackbar(
@@ -726,6 +762,33 @@ final class Caster {
 				true, // Is Closable
 				[ [ 'caption' => 'Activate', 'link' => get_admin_url('admin', 'admin.php?page=mdp_readabler_settings&tab=activation' ) ] ] // Buttons
 			);
+
+		} else {
+
+			$patience_period = get_option( 'mdp-readabler-grace' );
+			if ( $patience_period !== false && time() - $patience_period > self::$patience_time ) {
+
+                ?><div class="settings-error error notice-error">
+                    <p><strong><?php esc_html_e( 'Readabler licence issue', 'readabler' ); ?></strong></p>
+                    <?php echo wp_sprintf(
+                        '<p>%s</p>',
+                        esc_html__( 'You have been using the plugin without license activation for more than an hour. Please activate the license with a purchase key to continue using it.', 'readabler' )
+                    ); ?>
+                </div><?php
+
+			} else {
+
+				?><div class="settings-error notice notice-warning">
+                <p><strong><?php esc_html_e( 'Readabler will be disabled', 'readabler' ); ?></strong></p>
+				<?php echo wp_sprintf(
+					'<p><a href="%1$s" title="%2$s">%2$s</a> %3$s</p>',
+					get_admin_url('admin', 'admin.php?page=mdp_readabler_settings&tab=activation' ),
+					esc_html__( 'Activate', 'readabler' ),
+					esc_html__( 'your copy of the Readabler license to enable Accessibility Modes and additional features.', 'readabler' )
+				); ?>
+                </div><?php
+
+            }
 
 		}
 

@@ -5,7 +5,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.0
+ * @version         1.3.1
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -264,15 +264,6 @@ Please note: If you choose to hide the accessibility interface, you won\'t be ab
 			$js_object['highlightFocusWidth'] = $options['highlight_focus_width'];
 			$js_object['highlightFocusOffset'] = $options['highlight_focus_offset'];
 		}
-
-		/** Used for keyboard navigation. */
-		if (
-			'on' === $options['keyboard_navigation'] ||
-			'on' === $options['profile_blind_users']
-		) {
-			$js_object['highlightFocusColor'] = $options['highlight_focus_color'];
-		}
-
 
 		/** Virtual Keyboard. */
 		if (
