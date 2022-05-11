@@ -97,8 +97,8 @@ class MonsterInsights_Lite_User_Journey_WooCommerce_Metabox {
                                     '</strong>',
                                     '<strong>',
                                     '</strong>',
-                                    esc_url( $learn_more ),
-                                    ) ?>
+                                    esc_url( $learn_more )
+                                ); ?>
                             </p>
                             <a target="_blank" href="<?php echo esc_url( $upgrade_link ); ?>" title="" class="monsterinsights-uj-button monsterinsights-button">
                             <?php esc_html_e( 'Upgrade and Unlock', 'monsterinsights' ); ?>

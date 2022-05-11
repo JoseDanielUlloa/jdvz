@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5e42d45bbaee74a4621ab1c0f80072ab8b769ba8',
+    'reference' => '3e93943f9a7108a410461596e5d081299cde235c',
     'name' => 'yoast/wordpress-seo',
   ),
   'versions' => 
@@ -50,7 +50,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5e42d45bbaee74a4621ab1c0f80072ab8b769ba8',
+      'reference' => '3e93943f9a7108a410461596e5d081299cde235c',
     ),
   ),
 );

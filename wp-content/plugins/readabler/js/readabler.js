@@ -4,7 +4,7 @@
  * Exclusively on https://1.envato.market/readabler
  *
  * @encoding        UTF-8
- * @version         1.3.1
+ * @version         1.3.2
  * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Nemirovskiy Vitaliy (nemirovskiyvitaliy@gmail.com), Dmitry Merkulov (dmitry@merkulov.design)
@@ -5071,7 +5071,7 @@ let mdpReadabler = ( function() {
                     /** Set position for mobile **/
                 } else {
 
-                    top = position.bottom + DOCUMENT_SCROLL_TOP + iconsize + 10;
+                    top = position.bottom + DOCUMENT_SCROLL_TOP + 10;
 
                 }
 
@@ -5092,24 +5092,23 @@ let mdpReadabler = ( function() {
                 _icons = appendIcons();
                 setTooltipPosition();
 
-                /** Set transition for mobile **/
-                let mobileTransform = '';
-                if ( USER_IS_TOUCHING ) {
-                    mobileTransform = 'transform-origin: top; transform: scale(1,-1)';
-                }
-
                 const div = document.createElement('div');
                 div.className = 'mdp-readabler-tts';
                 // noinspection JSValidateTypes
                 div.style =
                     'top:' + top + 'px;' +
-                    'left:' + left + 'px;' +
-                    mobileTransform;
+                    'left:' + left + 'px;';
 
                 div.appendChild( _icons.icons );
 
                 const arrow = document.createElement( 'div' );
-                arrow.classList.add( 'mdp-readabler-tts-arrow' )
+                arrow.classList.add( 'mdp-readabler-tts-arrow' );
+
+                // Revert arrow to show bottom below the selected text
+                if ( USER_IS_TOUCHING ) {
+                    arrow.classList.add( 'mdp-readabler-tts-arrow-mobile' );
+                }
+
                 // noinspection JSValidateTypes
                 arrow.style =
                     'left:' + ( iconsize * _icons.length / 2 - 8 ) + 'px;';
@@ -5263,12 +5262,16 @@ let mdpReadabler = ( function() {
 
                             } else {
 
-                                /** Hide tooltip,  If we now not paying. */
-                                if (
-                                    (!document.querySelector('.mdp-readabler-tts.stop')) &&
-                                    (!document.querySelector('.mdp-readabler-tts.loading'))
-                                ) {
-                                    document.querySelector('.mdp-readabler-tts').remove();
+                                if ( ! USER_IS_TOUCHING ) {
+
+                                    /** Hide tooltip, If we're now not paying. */
+                                    if (
+                                        (!document.querySelector('.mdp-readabler-tts.stop')) &&
+                                        (!document.querySelector('.mdp-readabler-tts.loading'))
+                                    ) {
+                                        document.querySelector('.mdp-readabler-tts').remove();
+                                    }
+
                                 }
 
                             }
