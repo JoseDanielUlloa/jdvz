@@ -690,7 +690,7 @@ a:visited {
 }
 
 .nf-form-content input[type="button"] {
-  width: 20% !important;
+  width: 13em !important;
 }
 
 /***** Not found page styles *****/
