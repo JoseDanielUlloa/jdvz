@@ -320,28 +320,6 @@ a:visited {
   -webkit-transition: var(--ease-in-out);
 }
 
-.left-nav > ul > li > a:hover, 
-.left-nav > ul > li > a:active, 
-.left-nav > ul > li > a:focus, 
-.left-nav > ul > li > a[aria-expanded=true], 
-.right-nav > ul > li > a:hover, 
-.right-nav > ul > li > a:active, 
-.right-nav > ul > li > a:focus, 
-.right-nav > ul > li > a[aria-expanded=true], 
-.right-nav > ul > li > button:hover, 
-.right-nav > ul > li > button:active, 
-.right-nav > ul > li > button:focus, 
-.right-nav > ul > li > button[aria-expanded=true], 
-.social-nav > ul > li > a:hover, 
-.social-nav > ul > li > a:active, 
-.social-nav > ul > li > a:focus {
-  background-color: var(--color-gray-dark);
-  color: var(--color-light);
-  border-radius: var(--border-radius);
-  -moz-border-radius: var(--border-radius);
-  -webkit-border-radius: var(--border-radius);
-}
-
 .left-nav > ul > li.menu-item-has-children > a::after {
   content: "";
   display: inline-block;
@@ -788,6 +766,28 @@ a:visited {
 
   .show-on-mobile {
     display: none;
+  }
+
+  .left-nav>ul>li>a:hover,
+  .left-nav>ul>li>a:active,
+  .left-nav>ul>li>a:focus,
+  .left-nav>ul>li>a[aria-expanded=true],
+  .right-nav>ul>li>a:hover,
+  .right-nav>ul>li>a:active,
+  .right-nav>ul>li>a:focus,
+  .right-nav>ul>li>a[aria-expanded=true],
+  .right-nav>ul>li>button:hover,
+  .right-nav>ul>li>button:active,
+  .right-nav>ul>li>button:focus,
+  .right-nav>ul>li>button[aria-expanded=true],
+  .social-nav>ul>li>a:hover,
+  .social-nav>ul>li>a:active,
+  .social-nav>ul>li>a:focus {
+    background-color: var(--color-gray-dark);
+    color: var(--color-light);
+    border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
   }
 
 /***** Newsletter CTA *****/
