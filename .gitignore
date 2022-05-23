@@ -24,3 +24,6 @@ node_modules/
 
 # ignore wp-config.php
 wp-config.php
+
+# ignore htaccess
+.htaccess
